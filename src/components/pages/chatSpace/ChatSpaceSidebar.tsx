@@ -24,9 +24,7 @@ const ChannelRegister = styled.div`
 const ChatSpaceSidebar = () => (
   <div css="height: 100vh;">
     <div css="padding-top: 8px;">
-      <UserIcon>
-        Chat Space ユーザーアイコン
-      </UserIcon>
+      <UserIcon>Chat Space ユーザーアイコン</UserIcon>
       <div>
         <Channel>チャンネル１</Channel>
         <Channel>チャンネル2</Channel>

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components/macro';
+
 import googleIcon from '../../../assets/images/icons/google_icon_01.png';
 import lineIcon from '../../../assets/images/icons/line_icon_01.png';
 import twitterIcon from '../../../assets/images/icons/twitter_icon_01.png';
@@ -82,7 +83,7 @@ const TwitterButton = styled(Button)`
   color: #fff;
 `;
 const LineButton = styled(Button)`
-  background-color: #06C755;
+  background-color: #06c755;
   color: #fff;
 `;
 const Image = styled.img`
@@ -116,7 +117,9 @@ const LoginView = () => (
           <LoginButton>ログイン</LoginButton>
         </LoginLink>
         <LinkContent>
-          <PasswordForgetLink to="/auth">パスワードをお忘れの方はこちら</PasswordForgetLink>
+          <PasswordForgetLink to="/auth">
+            パスワードをお忘れの方はこちら
+          </PasswordForgetLink>
         </LinkContent>
         <LinkContent>
           <Link to="/auth/signup">初めての方はこちら</Link>

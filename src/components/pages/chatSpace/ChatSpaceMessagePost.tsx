@@ -27,9 +27,7 @@ const MessageTools = styled.div`
   border-bottom-left-radius: ${Size.BORDER_RADIUS};
   border-bottom-right-radius: ${Size.BORDER_RADIUS};
 `;
-const MessageSubmitButton = styled.input`
-  
-`;
+const MessageSubmitButton = styled.input``;
 
 const ChatSpaceMessagePost = () => (
   <Wrapper>

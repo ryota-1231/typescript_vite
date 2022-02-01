@@ -7,17 +7,17 @@ textarea {
   border: none;
 }
 
+textarea {
+  resize: none;
+}
+
 input:focus-visible,
 textarea:focus-visible {
   outline: none;
 }
 
-textarea {
-  resize: none;
-}
-
 button {
-  font-family: "ヒラギノ角ゴシック", "Hiragino Sans",
-    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "YuGothic", "Yu Gothic",
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans',
+    'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', YuGothic, 'Yu Gothic',
     sans-serif;
 }

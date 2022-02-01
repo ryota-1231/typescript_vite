@@ -10,6 +10,7 @@ module.exports = {
     'airbnb/hooks',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -20,12 +21,7 @@ module.exports = {
     sourceType: 'module',
     project: 'tsconfig.json',
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-    'import',
-    'unused-imports',
-  ],
+  plugins: ['react', '@typescript-eslint', 'import', 'unused-imports'],
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': [
