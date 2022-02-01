@@ -1,7 +1,1 @@
-import { CSSProp } from 'styled-components/cssprop';
-
-declare module 'react' {
-  interface Attributes {
-    css?: CSSProp;
-  }
-}
+import {} from 'styled-components/cssprop';
