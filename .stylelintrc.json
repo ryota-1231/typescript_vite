@@ -1,16 +1,18 @@
 {
-  "extends" : [
+  "extends": [
     "stylelint-config-standard",
     "stylelint-config-recess-order",
     "stylelint-config-prettier"
   ],
   "overrides": [
     {
-      "files": [
-        "**/*.jsx",
-        "**/*.tsx"
-      ],
-      "customSyntax": "@stylelint/postcss-css-in-js"
+      "files": ["**/*.jsx", "**/*.tsx"],
+      "customSyntax": "@stylelint/postcss-css-in-js",
+      "rules": {
+        "selector-max-type": 1,
+        "selector-max-combinators": 1,
+        "selector-max-class": 0
+      }
     }
   ]
 }
