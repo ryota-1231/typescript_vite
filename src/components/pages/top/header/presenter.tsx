@@ -5,7 +5,7 @@ import {
   StyledH1,
   StyledHeader,
   StyledHeaderInner,
-  StyledLi,
+  StyledList,
   StyledLiMessage,
   StyledTitleImage,
   StyledTitleUl,
@@ -29,36 +29,36 @@ const Presenter = () => (
                 <span>メッセージ</span>
               </a>
             </StyledLiMessage>
-            <StyledLi>
+            <StyledList>
               <a href="/top">
                 <span>お知らせ</span>
               </a>
-            </StyledLi>
-            <StyledLi>
+            </StyledList>
+            <StyledList>
               <a href="/top">
                 <span>0pt</span>
               </a>
-            </StyledLi>
-            <StyledLi>
+            </StyledList>
+            <StyledList>
               <a href="/top">
                 <span>予約確認</span>
               </a>
-            </StyledLi>
-            <StyledLi>
+            </StyledList>
+            <StyledList>
               <a href="/top">
                 <span>行ったお店</span>
               </a>
-            </StyledLi>
-            <StyledLi>
+            </StyledList>
+            <StyledList>
               <a href="/top">
                 <span>保存済み</span>
               </a>
-            </StyledLi>
-            <StyledLi>
+            </StyledList>
+            <StyledList>
               <a href="/top">
                 <span>マイページ</span>
               </a>
-            </StyledLi>
+            </StyledList>
           </StyledUl>
         </StyledUserMenu>
       </StyledHeaderInner>
@@ -71,7 +71,7 @@ const Presenter = () => (
             <a href="https://itunes.apple.com/jp/app/id763377066?mt=8">
               <img
                 alt="Download on the App Store"
-                src="https://tblg.k-img.com/images/restaurant/image/rsttop_download_appstore.png"
+                src="src/assets/images/download_appstore.png"
               />
             </a>
           </li>
@@ -79,7 +79,7 @@ const Presenter = () => (
             <a href="https://play.google.com/store/apps/details?id=com.kakaku.tabelog">
               <img
                 alt="GET IT ON Google Play"
-                src="https://tblg.k-img.com/images/restaurant/image/rsttop_download_googleplay.png"
+                src="src/assets/images/download_googleplay.png"
               />
             </a>
           </li>

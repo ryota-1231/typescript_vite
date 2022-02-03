@@ -1,8 +1,10 @@
 import Header from './header';
+import MainContainer from './mainContainer';
 
 const Presenter = () => (
   <div>
     <Header />
+    <MainContainer />
     {/* mainWrapper */}
     {/* main */}
     {/* areaContents */}

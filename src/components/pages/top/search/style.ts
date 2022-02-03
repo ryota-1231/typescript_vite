@@ -1,5 +1,6 @@
 import styled from 'styled-components/macro';
 
+import Color from '../../../../styles/const/Color';
 import Size from '../../../../styles/const/Size';
 
 export const StyledWrapper = styled.div`
@@ -80,7 +81,7 @@ export const StyledInput = styled.input`
   line-height: 46px;
   border-bottom: 2px solid transparent;
   &:focus {
-    border-bottom: solid 2px #ff9600;
+    border-bottom: solid 2px ${Color.HOVER};
   }
 `;
 
@@ -110,5 +111,8 @@ export const StyledFormButton = styled.button`
     text-align: center;
     letter-spacing: 0.3em;
     font-style: normal;
+  }
+  &:hover {
+    cursor: pointer;
   }
 `;

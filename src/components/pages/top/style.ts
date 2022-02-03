@@ -18,7 +18,7 @@ export const StyledContent = styled.div`
   margin: 0 auto;
 `;
 export const StyledP = styled.p`
-  font-size: '${Size.FONT.L}px';
+  font-size: ${Size.FONT.L}px;
   font-weight: bold;
   word-spacing: 2rem;
   text-align: center;

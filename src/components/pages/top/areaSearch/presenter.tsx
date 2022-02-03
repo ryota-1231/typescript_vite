@@ -1,0 +1,147 @@
+import { Area } from '../../../../utils/area';
+import H1 from '../../../uiParts/h1Component/style';
+import H3 from '../../../uiParts/h3Component/style';
+
+import {
+  StyledAreaList,
+  StyledAreaTarget,
+  StyledAreaTargetImage,
+  StyledAreaTargetNum,
+  StyledAreaTargetNumUnit,
+  StyledAreaTargetText,
+  StyledAreaUl,
+  StyledHeading,
+  StyledMoreLink,
+  StyledMoreLinkUl,
+  StyledPrefContents,
+  StyledPrefLink,
+  StyledPrefList,
+  StyledPrefSet,
+  StyledPrefUl,
+  StyledSection,
+} from './style';
+
+const Presenter = () => (
+  <StyledSection>
+    <StyledHeading>
+      <H1>エリアから探す</H1>
+    </StyledHeading>
+    <StyledAreaUl>
+      <StyledAreaList>
+        <StyledAreaTarget>
+          <StyledAreaTargetImage>
+            <img alt="東京" src="src/assets/images/top_area_search_tokyo.png" />
+          </StyledAreaTargetImage>
+          <StyledAreaTargetText>
+            東京
+            <StyledAreaTargetNum>128,475</StyledAreaTargetNum>
+            <StyledAreaTargetNumUnit>件</StyledAreaTargetNumUnit>
+          </StyledAreaTargetText>
+        </StyledAreaTarget>
+      </StyledAreaList>
+      <StyledAreaList css="margin-left: 30px">
+        <StyledAreaTarget>
+          <StyledAreaTargetImage>
+            <img
+              alt="神奈川"
+              src="src/assets/images/top_area_search_kanagawa.png"
+            />
+          </StyledAreaTargetImage>
+          <StyledAreaTargetText>
+            神奈川
+            <StyledAreaTargetNum>45,138</StyledAreaTargetNum>
+            <StyledAreaTargetNumUnit>件</StyledAreaTargetNumUnit>
+          </StyledAreaTargetText>
+        </StyledAreaTarget>
+      </StyledAreaList>
+      <StyledAreaList css="margin-left: 30px">
+        <StyledAreaTarget>
+          <StyledAreaTargetImage>
+            <img alt="愛知" src="src/assets/images/top_area_search_aichi.png" />
+          </StyledAreaTargetImage>
+          <StyledAreaTargetText>
+            愛知
+            <StyledAreaTargetNum>43,989</StyledAreaTargetNum>
+            <StyledAreaTargetNumUnit>件</StyledAreaTargetNumUnit>
+          </StyledAreaTargetText>
+        </StyledAreaTarget>
+      </StyledAreaList>
+    </StyledAreaUl>
+    <StyledAreaUl>
+      <StyledAreaList>
+        <StyledAreaTarget>
+          <StyledAreaTargetImage>
+            <img alt="大阪" src="src/assets/images/top_area_search_osaka.png" />
+          </StyledAreaTargetImage>
+          <StyledAreaTargetText>
+            大阪
+            <StyledAreaTargetNum>64,287</StyledAreaTargetNum>
+            <StyledAreaTargetNumUnit>件</StyledAreaTargetNumUnit>
+          </StyledAreaTargetText>
+        </StyledAreaTarget>
+      </StyledAreaList>
+      <StyledAreaList css="margin-left: 30px">
+        <StyledAreaTarget>
+          <StyledAreaTargetImage>
+            <img alt="京都" src="src/assets/images/top_area_search_kyoto.png" />
+          </StyledAreaTargetImage>
+          <StyledAreaTargetText>
+            京都
+            <StyledAreaTargetNum>21,073</StyledAreaTargetNum>
+            <StyledAreaTargetNumUnit>件</StyledAreaTargetNumUnit>
+          </StyledAreaTargetText>
+        </StyledAreaTarget>
+      </StyledAreaList>
+      <StyledAreaList css="margin-left: 30px">
+        <StyledAreaTarget>
+          <StyledAreaTargetImage>
+            <img
+              alt="福岡"
+              src="src/assets/images/top_area_search_fukuoka.png"
+            />
+          </StyledAreaTargetImage>
+          <StyledAreaTargetText>
+            福岡
+            <StyledAreaTargetNum>32,241</StyledAreaTargetNum>
+            <StyledAreaTargetNumUnit>件</StyledAreaTargetNumUnit>
+          </StyledAreaTargetText>
+        </StyledAreaTarget>
+      </StyledAreaList>
+    </StyledAreaUl>
+    <StyledPrefContents>
+      {Area.PREFECTURES.map((obj, _) => {
+        const localKey: string = Object.keys(obj)[0];
+        return (
+          <StyledPrefSet key={localKey}>
+            <H3>{localKey}</H3>
+            <StyledPrefUl>
+              {obj[localKey].map((prefecture, _) => (
+                <StyledPrefList key={prefecture.id}>
+                  <StyledPrefLink href={prefecture.link}>
+                    {prefecture.name}
+                  </StyledPrefLink>
+                </StyledPrefList>
+              ))}
+            </StyledPrefUl>
+          </StyledPrefSet>
+        );
+      })}
+    </StyledPrefContents>
+    <StyledMoreLinkUl>
+      <li>
+        <StyledMoreLink>注目エリア</StyledMoreLink>
+      </li>
+      <li css="margin-left: 15px;">
+        <StyledMoreLink>全国の居酒屋</StyledMoreLink>
+      </li>
+      <li css="margin-left: 15px;">
+        <StyledMoreLink>全国のお店</StyledMoreLink>
+      </li>
+      <li css="margin-left: 15px;">
+        <StyledMoreLink>海外のお店</StyledMoreLink>
+      </li>
+    </StyledMoreLinkUl>
+  </StyledSection>
+);
+
+export default Presenter;

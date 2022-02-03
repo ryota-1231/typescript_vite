@@ -1,5 +1,5 @@
 import Presenter from './presenter';
 
-const TopPage = () => <Presenter />;
+const H1Component = () => <Presenter />;
 
-export default TopPage;
+export default H1Component;

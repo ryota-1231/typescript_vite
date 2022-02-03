@@ -12,7 +12,7 @@ import {
   StyledAreaContents,
   StyledKeywordContents,
   StyledAreaInput,
-} from './styled';
+} from './style';
 
 const Presenter = () => (
   <StyledWrapper>

@@ -60,7 +60,7 @@ export const StyledUl = styled.ul`
   white-space: nowrap;
 `;
 
-export const StyledLi = styled.li`
+export const StyledList = styled.li`
   display: inline-block;
   position: relative;
   font-size: 12.5px;
@@ -84,7 +84,7 @@ export const StyledLi = styled.li`
   }
 `;
 
-export const StyledLiMessage = styled(StyledLi)`
+export const StyledLiMessage = styled(StyledList)`
   &::before {
     content: none;
   }
