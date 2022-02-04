@@ -1,3 +1,6 @@
+import { useContext } from 'react';
+
+import { PrefectureContext } from '../../../../contexts/prefectureContext';
 import AreaSearch from '../areaSearch';
 import AreaSearchDetail from '../areaSearchDetail';
 
@@ -9,18 +12,21 @@ import {
   StyledWrapper,
 } from './style';
 
-const Presenter = () => (
-  <StyledWrapper>
-    <StyledContainer>
-      <StyledTopColumn>
-        <StyledTopColumnMain>
-          <AreaSearch />
-          <AreaSearchDetail />
-        </StyledTopColumnMain>
-        <StyledTopColumnSide />
-      </StyledTopColumn>
-    </StyledContainer>
-  </StyledWrapper>
-);
-
+const Presenter = () => {
+  const prefectureContext = useContext(PrefectureContext);
+  return (
+    <StyledWrapper>
+      <StyledContainer>
+        <StyledTopColumn>
+          <StyledTopColumnMain>
+            <AreaSearch />
+            {/* <AreaSearchDetail /> */}
+            {!prefectureContext.isRemove ? <AreaSearchDetail /> : ''}
+          </StyledTopColumnMain>
+          <StyledTopColumnSide />
+        </StyledTopColumn>
+      </StyledContainer>
+    </StyledWrapper>
+  );
+};
 export default Presenter;

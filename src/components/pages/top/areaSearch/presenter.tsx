@@ -1,4 +1,4 @@
-import { Area } from '../../../../utils/area';
+import { PREFECTURES } from '../../../../utils/area';
 import H1 from '../../../uiParts/h1Component/style';
 import H3 from '../../../uiParts/h3Component/style';
 
@@ -21,13 +21,28 @@ import {
   StyledSection,
 } from './style';
 
-const Presenter = () => (
-  <StyledSection>
+type PrefectureType = {
+  isDisplay: boolean;
+  handleClickPrefecture: (arg: string) => void;
+  handleClickIsDisplay: () => void;
+};
+
+const Presenter = ({
+  isDisplay,
+  handleClickPrefecture,
+  handleClickIsDisplay,
+}: PrefectureType) => (
+  <StyledSection isDisplay={isDisplay}>
     <StyledHeading>
       <H1>エリアから探す</H1>
     </StyledHeading>
     <StyledAreaUl>
-      <StyledAreaList>
+      <StyledAreaList
+        onClick={() => {
+          handleClickPrefecture('東京');
+          handleClickIsDisplay();
+        }}
+      >
         <StyledAreaTarget>
           <StyledAreaTargetImage>
             <img alt="東京" src="src/assets/images/top_area_search_tokyo.png" />
@@ -39,7 +54,13 @@ const Presenter = () => (
           </StyledAreaTargetText>
         </StyledAreaTarget>
       </StyledAreaList>
-      <StyledAreaList css="margin-left: 30px">
+      <StyledAreaList
+        css="margin-left: 30px"
+        onClick={() => {
+          handleClickPrefecture('神奈川');
+          handleClickIsDisplay();
+        }}
+      >
         <StyledAreaTarget>
           <StyledAreaTargetImage>
             <img
@@ -54,7 +75,13 @@ const Presenter = () => (
           </StyledAreaTargetText>
         </StyledAreaTarget>
       </StyledAreaList>
-      <StyledAreaList css="margin-left: 30px">
+      <StyledAreaList
+        css="margin-left: 30px"
+        onClick={() => {
+          handleClickPrefecture('愛知');
+          handleClickIsDisplay();
+        }}
+      >
         <StyledAreaTarget>
           <StyledAreaTargetImage>
             <img alt="愛知" src="src/assets/images/top_area_search_aichi.png" />
@@ -68,7 +95,12 @@ const Presenter = () => (
       </StyledAreaList>
     </StyledAreaUl>
     <StyledAreaUl>
-      <StyledAreaList>
+      <StyledAreaList
+        onClick={() => {
+          handleClickPrefecture('大阪');
+          handleClickIsDisplay();
+        }}
+      >
         <StyledAreaTarget>
           <StyledAreaTargetImage>
             <img alt="大阪" src="src/assets/images/top_area_search_osaka.png" />
@@ -80,7 +112,13 @@ const Presenter = () => (
           </StyledAreaTargetText>
         </StyledAreaTarget>
       </StyledAreaList>
-      <StyledAreaList css="margin-left: 30px">
+      <StyledAreaList
+        css="margin-left: 30px"
+        onClick={() => {
+          handleClickPrefecture('京都');
+          handleClickIsDisplay();
+        }}
+      >
         <StyledAreaTarget>
           <StyledAreaTargetImage>
             <img alt="京都" src="src/assets/images/top_area_search_kyoto.png" />
@@ -92,7 +130,13 @@ const Presenter = () => (
           </StyledAreaTargetText>
         </StyledAreaTarget>
       </StyledAreaList>
-      <StyledAreaList css="margin-left: 30px">
+      <StyledAreaList
+        css="margin-left: 30px"
+        onClick={() => {
+          handleClickPrefecture('福岡');
+          handleClickIsDisplay();
+        }}
+      >
         <StyledAreaTarget>
           <StyledAreaTargetImage>
             <img
@@ -109,13 +153,13 @@ const Presenter = () => (
       </StyledAreaList>
     </StyledAreaUl>
     <StyledPrefContents>
-      {Area.PREFECTURES.map((obj, _) => {
+      {PREFECTURES.map((obj) => {
         const localKey: string = Object.keys(obj)[0];
         return (
           <StyledPrefSet key={localKey}>
             <H3>{localKey}</H3>
             <StyledPrefUl>
-              {obj[localKey].map((prefecture, _) => (
+              {obj[localKey].map((prefecture) => (
                 <StyledPrefList key={prefecture.id}>
                   <StyledPrefLink href={prefecture.link}>
                     {prefecture.name}

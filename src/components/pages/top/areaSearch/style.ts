@@ -3,12 +3,27 @@ import styled from 'styled-components/macro';
 import Color from '../../../../styles/const/Color';
 import SpanNumber from '../../../uiParts/spanNumberComponent/style';
 
-export const StyledSection = styled.section`
+const changeStyle = (props: boolean) => {
+  if (props) {
+    return `
+    opacity: 0;
+    transition: 0.3s;
+    transition-delay: 0s;
+    transform: translateX(-30px);
+    pointer-events: none;
+  `;
+  }
+  return `
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+  `;
+};
+
+export const StyledSection = styled.section<{ isDisplay: boolean }>`
   position: relative;
   width: 100%;
-  opacity: 1;
-  transition: 0.3s;
-  transition-delay: 0.1s;
+  ${(props) => changeStyle(props.isDisplay)}
 `;
 
 export const StyledHeading = styled.div`

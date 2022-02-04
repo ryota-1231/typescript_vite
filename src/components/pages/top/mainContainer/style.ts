@@ -28,6 +28,7 @@ export const StyledTopColumnMain = styled.div`
   width: 100%;
   min-width: 800px;
   max-width: 980px;
+  position: relative;
 `;
 
 export const StyledTopColumnSide = styled.div`

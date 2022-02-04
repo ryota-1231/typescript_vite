@@ -1,5 +1,5 @@
-import { Area } from '../../../../utils/area';
-import { StyledListComponent } from '../../../uiParts/listComponent/style';
+import { CITY, PRIMARY_CITY } from '../../../../utils/area';
+import ListSubComponent from '../../../uiParts/listSubComponent';
 
 import {
   StyledFrame,
@@ -8,40 +8,51 @@ import {
   StyledFrameTitleNum,
   StyledFrameTitleNumUnit,
   StyledFrameUl,
+  StyledListComponent,
   StyledP,
   StyledSection,
   StyledSpan,
 } from './style';
 
-const Presenter = () => (
-  <StyledSection>
-    <StyledP>
+type PrefectureType = {
+  prefectures: string;
+  isDisplay: boolean;
+  handleClickIsDisplay: () => void;
+};
+
+const Presenter = ({
+  prefectures,
+  isDisplay,
+  handleClickIsDisplay,
+}: PrefectureType) => (
+  <StyledSection isDisplay={isDisplay}>
+    <StyledP onClick={handleClickIsDisplay}>
       <StyledSpan>都道府県一覧に戻る</StyledSpan>
     </StyledP>
     <StyledFrame>
       <p>
-        <StyledFrameTitleLink href="/">東京</StyledFrameTitleLink>
+        <StyledFrameTitleLink href="/">{prefectures}</StyledFrameTitleLink>
         <StyledFrameTitleNum>128,475</StyledFrameTitleNum>
         <StyledFrameTitleNumUnit>件</StyledFrameTitleNumUnit>
       </p>
       <StyledFrameUl>
         {/* TODO:propsを受けとって動的に実装する */}
-        {Area.PRIMARY_CITY[0]['東京'].map((area) => (
+        {PRIMARY_CITY[0]['東京'].map((area) => (
           <StyledListComponent
-            key={area.id}
+            key={`primary_city_${area.id}`}
             text={area.name}
             link={area.link}
           />
         ))}
       </StyledFrameUl>
       <StyledFrameSubUl>
-        {/* {Area.CITY[0]['東京'].map((area) => (
-          <StyledListComponent
-            key={area.id}
+        {CITY[0]['東京'].map((area) => (
+          <ListSubComponent
+            key={`city_${area.id}`}
             text={area.name}
             link={area.link}
           />
-        ))} */}
+        ))}
       </StyledFrameSubUl>
     </StyledFrame>
   </StyledSection>

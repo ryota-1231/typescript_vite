@@ -7,7 +7,7 @@ type PropsType = {
 };
 
 /**
- * リストコンポーネント
+ * リストサブコンポーネント
  * @param text <テキスト>
  * @param link <aタグlink>
  * @param className <null許可/SC拡張用>
