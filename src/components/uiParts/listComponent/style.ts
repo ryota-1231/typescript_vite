@@ -4,10 +4,10 @@ import Color from '../../../styles/const/Color';
 
 export const List = styled.li`
   display: inline-flex;
-  margin: 1.2rem 1.2rem 0 0;
+  margin: 12px 12px 0 0;
   border: 1px solid #e1e1e1;
   border-radius: 2px;
-  font-size: 1.2rem;
+  font-size: 12px;
   line-height: 1;
   &:hover {
     border: 1px solid ${Color.HOVER};
@@ -15,7 +15,7 @@ export const List = styled.li`
 `;
 
 export const Link = styled.a`
-  padding: 0.7rem 1.4rem;
+  padding: 7px 14px;
   color: #595960;
   ${List} &:hover {
     color: ${Color.HOVER};

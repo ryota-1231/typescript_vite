@@ -76,4 +76,11 @@ atoms/molecules 層の汎用 component。storybook を使用。
 
 ### utils/定数
 
-module を使用して名前空間を分ける。
+## context
+
+context を使用する際は該当の page/index.tsx ファイルの階層から 2 段階以上離れている時。
+１段階しか離れていない場合は、下記を使用して型を定義して props を直接渡して管理する。
+
+> type PropsType = React.ComponentProps<typeof Presenter>;
+
+## push する時は eslint-fix/prettier-fix/stylelint-fix を実行してそれぞれでエラーがない状態ですること

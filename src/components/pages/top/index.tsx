@@ -1,7 +1,16 @@
+import {
+  PrefectureContext,
+  usePrefectureContext,
+} from '../../../contexts/prefectureContext';
+
 import Presenter from './presenter';
 
-const TopPage = () => (
-  // TODO: ロジックを追加。Presenterにその結果等をPropsを使用して渡す。
-  <Presenter />
-);
+const TopPage = () => {
+  const initialPrefectureContext = usePrefectureContext();
+  return (
+    <PrefectureContext.Provider value={initialPrefectureContext}>
+      <Presenter />
+    </PrefectureContext.Provider>
+  );
+};
 export default TopPage;
