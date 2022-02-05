@@ -5,6 +5,7 @@ import {
 
 import Presenter from './presenter';
 
+/** トップページコンポーネント */
 const TopPage = () => {
   const initialPrefectureContext = usePrefectureContext();
   return (

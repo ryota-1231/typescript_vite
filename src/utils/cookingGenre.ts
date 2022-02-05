@@ -50,7 +50,7 @@ export const PRIMARY_COOKING_GENRE = [
   },
 ];
 
-export const COOKING_GENRE: CookingGenreType[] = [
+export const SUB_COOKING_GENRE: CookingGenreType[] = [
   { id: 1, name: '和食', link: '/' },
   { id: 2, name: '日本料理', link: '/' },
   { id: 3, name: '魚介・海鮮料理', link: '/' },

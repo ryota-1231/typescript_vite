@@ -4,6 +4,7 @@ import { PrefectureContext } from '../../../../contexts/prefectureContext';
 
 import Presenter from './presenter';
 
+/** エリアから探すコンポーネント */
 const AreaSearch = () => {
   const prefectureContext = useContext(PrefectureContext);
 

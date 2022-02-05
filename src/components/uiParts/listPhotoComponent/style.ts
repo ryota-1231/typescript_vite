@@ -46,12 +46,16 @@ export const StyledPhotoListWrapper = styled.div`
   line-height: 1.2;
 `;
 
-export const StyledPhotoListSubject = styled.p`
-  font-size: 17px;
+export const StyledPhotoListSubject = styled.p<{ fontSize?: string }>`
+  font-size: ${(props) => props.fontSize};
   font-weight: bold;
   letter-spacing: 0.06vw;
   line-height: 1.5;
 `;
+
+StyledPhotoListSubject.defaultProps = {
+  fontSize: '17px',
+};
 
 export const StyledPhotoListCount = styled.p`
   font-size: 12.8px;

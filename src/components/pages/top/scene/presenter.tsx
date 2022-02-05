@@ -1,36 +1,31 @@
-import {
-  PRIMARY_COOKING_GENRE,
-  SUB_COOKING_GENRE,
-} from '../../../../utils/cookingGenre';
+import { PRIMARY_SCENE, SUB_SCENE } from '../../../../utils/scene';
 import H1 from '../../../uiParts/h1Component/style';
 import ListComponent from '../../../uiParts/listComponent';
 import ListPhotoComponent from '../../../uiParts/listPhotoComponent';
 
-import { StyledMoreLink, StyledPhotoUl } from './style';
+import StyledPhotoUl from './style';
 
 const Presenter = () => (
   <section css="margin-top: 30px">
-    <H1>料理ジャンルから探す</H1>
+    <H1>利用シーンから探す</H1>
     <div css="margin-top: 20px">
       <StyledPhotoUl>
-        {PRIMARY_COOKING_GENRE.map((genre) => (
+        {PRIMARY_SCENE.map((genre) => (
           <ListPhotoComponent
             key={genre.id}
             text={genre.name}
             imageSrc={genre.imageSrc}
             link={genre.link}
             number={genre.number}
+            fontSize="15.8px"
           />
         ))}
       </StyledPhotoUl>
       <ul css="margin-top: 13px;">
-        {SUB_COOKING_GENRE.map((genre) => (
+        {SUB_SCENE.map((genre) => (
           <ListComponent key={genre.id} text={genre.name} link={genre.link} />
         ))}
       </ul>
-      <StyledMoreLink>
-        <a href="/">ジャンル一覧へ</a>
-      </StyledMoreLink>
     </div>
   </section>
 );
