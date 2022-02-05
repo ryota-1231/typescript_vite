@@ -1,11 +1,19 @@
-type CookingGenreType = {
+type PrimaryCookingGenreType = {
+  id: number;
+  name: string;
+  imageSrc: string;
+  link: string;
+  number: number;
+};
+
+type SubCookingGenreType = {
   id: number;
   name: string;
   link: string;
 };
 
 // TODO:DBにデータ移行
-export const PRIMARY_COOKING_GENRE = [
+export const PRIMARY_COOKING_GENRE: PrimaryCookingGenreType[] = [
   {
     id: 1,
     name: '焼肉',
@@ -50,7 +58,7 @@ export const PRIMARY_COOKING_GENRE = [
   },
 ];
 
-export const SUB_COOKING_GENRE: CookingGenreType[] = [
+export const SUB_COOKING_GENRE: SubCookingGenreType[] = [
   { id: 1, name: '和食', link: '/' },
   { id: 2, name: '日本料理', link: '/' },
   { id: 3, name: '魚介・海鮮料理', link: '/' },
