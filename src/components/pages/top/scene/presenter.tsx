@@ -1,5 +1,3 @@
-
-
 import { PRIMARY_SCENE, SUB_SCENE } from '../../../../utils/scene';
 import H1 from '../../../uiParts/h1Component/style';
 import ListComponent from '../../../uiParts/listComponent';
@@ -19,6 +17,7 @@ const Presenter = () => (
             imageSrc={genre.imageSrc}
             link={genre.link}
             number={genre.number}
+            fontSize="15.8px"
           />
         ))}
       </StyledPhotoUl>

@@ -7,6 +7,7 @@ const ListPhotoComponent = ({
   imageSrc,
   link,
   number,
+  fontSize,
   className,
 }: PropsType) => (
   <Presenter
@@ -14,6 +15,7 @@ const ListPhotoComponent = ({
     imageSrc={imageSrc}
     link={link}
     number={number}
+    fontSize={fontSize}
     className={className}
   />
 );
