@@ -4,6 +4,7 @@ import { PrefectureContext } from '../../../contexts/prefectureContext';
 
 import AreaSearch from './areaSearch';
 import AreaSearchDetail from './areaSearchDetail';
+import CommitmentConditions from './commitmentConditions';
 import CookingGenre from './cookingGenre';
 import Header from './header';
 import Scene from './scene';
@@ -29,6 +30,7 @@ const Presenter = () => {
             </StyledAreaSearchContainer>
             <CookingGenre />
             <Scene />
+            <CommitmentConditions />
           </StyledMainColumn>
           <SidebarColumn />
         </StyledMainContents>
