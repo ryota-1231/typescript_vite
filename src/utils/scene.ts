@@ -1,11 +1,19 @@
-type SceneType = {
+type PrimarySceneType = {
+  id: number;
+  name: string;
+  imageSrc: string;
+  link: string;
+  number: number;
+};
+
+type SubSceneType = {
   id: number;
   name: string;
   link: string;
 };
 
 // TODO:DBにデータ移行
-export const PRIMARY_SCENE = [
+export const PRIMARY_SCENE: PrimarySceneType[] = [
   {
     id: 1,
     name: 'お一人様',
@@ -50,6 +58,6 @@ export const PRIMARY_SCENE = [
   },
 ];
 
-export const SUB_SCENE: SceneType[] = [
+export const SUB_SCENE: SubSceneType[] = [
   { id: 1, name: '大人数の宴会', link: '/' },
 ];
