@@ -9,6 +9,7 @@ import CookingGenre from './cookingGenre';
 import Header from './header';
 import Scene from './scene';
 import SidebarColumn from './sidebarColumn';
+import SpecialFeature from './specialFeature';
 import {
   StyledAreaSearchContainer,
   StyledMainColumn,
@@ -29,6 +30,7 @@ const Presenter = () => {
               {!prefectureContext.isRemove ? <AreaSearchDetail /> : ''}
             </StyledAreaSearchContainer>
             <CookingGenre />
+            <SpecialFeature />
             <Scene />
             <CommitmentConditions />
           </StyledMainColumn>
