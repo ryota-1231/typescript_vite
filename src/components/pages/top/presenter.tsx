@@ -6,6 +6,7 @@ import AreaSearch from './areaSearch';
 import AreaSearchDetail from './areaSearchDetail';
 import CommitmentConditions from './commitmentConditions';
 import CookingGenre from './cookingGenre';
+import FeaturedGourmet from './featuredGourmet';
 import Header from './header';
 import Scene from './scene';
 import SidebarColumn from './sidebarColumn';
@@ -33,6 +34,7 @@ const Presenter = () => {
             <SpecialFeature />
             <Scene />
             <CommitmentConditions />
+            <FeaturedGourmet />
           </StyledMainColumn>
           <SidebarColumn />
         </StyledMainContents>
