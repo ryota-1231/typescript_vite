@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro';
+
 import Color from '../../../../styles/const/Color';
 
 export const StyledInfoWrapper = styled.div`
@@ -81,21 +82,21 @@ export const StyledInfoSubject = styled.p`
 `;
 
 export const StyledInfoListLink = styled.a`
-  &:hover{
+  &:hover {
     color: #ff9600;
     text-decoration: underline;
   }
 `;
 
 export const StyledInfoListImageWrapper = styled.div`
-      display: table-cell;
-    padding-right: 15px;
-    width: 45px;
-    height: 45px;
+  display: table-cell;
+  padding-right: 15px;
+  width: 45px;
+  height: 45px;
 `;
 
 export const StyledInfoListDetail = styled.p`
-      display: table-cell;
-    font-weight: 600;
-    vertical-align: middle;
+  display: table-cell;
+  font-weight: 600;
+  vertical-align: middle;
 `;
