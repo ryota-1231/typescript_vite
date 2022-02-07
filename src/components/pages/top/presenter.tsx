@@ -9,6 +9,7 @@ import BottomSearch from './bottomSearch';
 import CommitmentConditions from './commitmentConditions';
 import CookingGenre from './cookingGenre';
 import FeaturedGourmet from './featuredGourmet';
+import Footer from './footer';
 import Header from './header';
 import Scene from './scene';
 import SidebarColumn from './sidebarColumn';
@@ -53,33 +54,7 @@ const Presenter = () => {
           </div>
         </StyledBottomContainer>
       </StyledBottomWrapper>
-
-      {/* main */}
-      {/* sidebar */}
-      {/* counter */}
-      {/* myself info */}
-      {/* history */}
-      {/* information */}
-      {/* limited plan */}
-      {/* pr */}
-      {/* contents */}
-      {/* sidebar */}
-      {/* mainWrapper */}
-      {/* bottomWrapper */}
-      {/* tabelog award */}
-      {/* hyaku meiten */}
-      {/* search */}
-      {/* top */}
-      {/* user search */}
-      {/* top */}
-      {/* bottom */}
-      {/* genre ranging search */}
-      {/* others */}
-      {/* bottom */}
-      {/* search */}
-      {/* bottom contents */}
-      {/* footer */}
-      {/* bottomWrapper */}
+      <Footer />
     </div>
   );
 };
