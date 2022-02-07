@@ -6,11 +6,7 @@ type PrimaryCommitmentConditionsType = {
   number: number;
 };
 
-type SubCommitmentConditionsType = {
-  id: number;
-  name: string;
-  link: string;
-};
+type ConditionsType = { id: number; name: string; link: string };
 
 // TODO:DBにデータ移行
 export const PRIMARY_COMMITMENT_CONDITIONS: PrimaryCommitmentConditionsType[] =
@@ -59,7 +55,7 @@ export const PRIMARY_COMMITMENT_CONDITIONS: PrimaryCommitmentConditionsType[] =
     },
   ];
 
-export const SUB_COMMITMENT_CONDITIONS: SubCommitmentConditionsType[] = [
+export const SUB_COMMITMENT_CONDITIONS: ConditionsType[] = [
   { id: 1, name: '大人数の宴会', link: '/' },
   { id: 2, name: 'ワインあり', link: '/' },
   { id: 3, name: '日本酒あり', link: '/' },
@@ -108,4 +104,25 @@ export const SUB_COMMITMENT_CONDITIONS: SubCommitmentConditionsType[] = [
   { id: 47, name: '予約可', link: '/' },
   { id: 48, name: 'ドリンク持込可', link: '/' },
   { id: 49, name: 'お祝い・サプライズ可', link: '/' },
+];
+
+export const OTHER_CONDITIONS: ConditionsType[] = [
+  { id: 1, name: '全国のランチランキング', link: '/' },
+  { id: 2, name: '～ 1,000円のランチ', link: '/' },
+  { id: 3, name: '1,000円 ～ 2,000円のランチ', link: '/' },
+  { id: 4, name: '2,000円 ～ のランチ', link: '/' },
+  { id: 5, name: '飲食チェーン・ブランド', link: '/' },
+  { id: 6, name: '全国のニューオープン・レストラン', link: '/' },
+  { id: 7, name: '新宿×カフェ', link: '/' },
+  { id: 8, name: '渋谷×焼肉', link: '/' },
+  { id: 9, name: '恵比寿×ランチ', link: '/' },
+  { id: 10, name: '三軒茶屋×ランチ', link: '/' },
+  { id: 11, name: '表参道×カフェ', link: '/' },
+  { id: 12, name: '池袋×居酒屋', link: '/' },
+  { id: 13, name: '京都駅×ランチ', link: '/' },
+  { id: 14, name: '銀座×イタリアン', link: '/' },
+  { id: 15, name: '博多×ラーメン', link: '/' },
+  { id: 16, name: '梅田×居酒屋', link: '/' },
+  { id: 17, name: 'みなとみらい×ランチ', link: '/' },
+  { id: 18, name: '原宿×パンケーキ', link: '/' },
 ];

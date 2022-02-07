@@ -27,3 +27,15 @@ export const StyledAreaSearchContainer = styled.div`
   min-height: 485px;
   display: flex;
 `;
+
+export const StyledBottomWrapper = styled.div`
+  margin-top: 5rem;
+  border-top: 1px solid #f4f4f4;
+`;
+
+export const StyledBottomContainer = styled.div`
+  margin: 0 auto;
+  padding: 0 7rem;
+  min-width: 1260px;
+  max-width: 1540px;
+`;
