@@ -1,5 +1,7 @@
 import styled from 'styled-components/macro';
 
+import Color from '../../../../styles/const/Color';
+
 export const StyledPhotoUl = styled.ul`
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +13,7 @@ export const StyledMoreLink = styled.div`
   font-size: 13px;
   text-align: right;
   > a {
-    color: #06c;
+    color: ${Color.LINK};
     display: inline-block;
     height: 17px;
     cursor: pointer;

@@ -60,7 +60,7 @@ export const StyledP = styled.p`
   font-size: 17px;
   display: inline-block;
   position: relative;
-  color: #06c;
+  color: ${Color.LINK};
   font-weight: 600;
   letter-spacing: 0.4px;
   &::before {

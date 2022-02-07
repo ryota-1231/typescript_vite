@@ -11,7 +11,6 @@ export const List = styled.li`
 export const Link = styled.a`
   display: inline-block;
   cursor: pointer;
-  color: #06c;
   ${List} &:hover {
     color: ${Color.HOVER};
   }

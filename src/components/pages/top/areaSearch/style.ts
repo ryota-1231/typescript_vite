@@ -133,7 +133,6 @@ export const StyledPrefList = styled.li`
 `;
 
 export const StyledPrefLink = styled.a`
-  color: #06c;
   &:hover {
     color: ${Color.HOVER};
     cursor: pointer;
