@@ -24,9 +24,13 @@ const Presenter = () => (
         ))}
       </StyledPhotoUl>
       <ul css="margin-top: 13px;">
-        {SUB_COOKING_GENRE.map((genre) => (
-          <ListComponent key={genre.id} text={genre.name} link={genre.link} />
-        ))}
+        {SUB_COOKING_GENRE.flatMap((genre) =>
+          genre.primary ? (
+            ''
+          ) : (
+            <ListComponent key={genre.id} text={genre.name} link={genre.link} />
+          ),
+        )}
       </ul>
       <StyledMoreLink>
         <a href="/">ジャンル一覧へ</a>
