@@ -17,6 +17,7 @@ import {
   StyledMainContainer,
   StyledMainContents,
 } from './style';
+import Timeline from './timeline';
 
 const Presenter = () => {
   const prefectureContext = useContext(PrefectureContext);
@@ -35,19 +36,12 @@ const Presenter = () => {
             <Scene />
             <CommitmentConditions />
             <FeaturedGourmet />
+            <Timeline />
           </StyledMainColumn>
           <SidebarColumn />
         </StyledMainContents>
       </StyledMainContainer>
 
-      {/* mainWrapper */}
-      {/* main */}
-      {/* areaContents */}
-      {/* genreContents */}
-      {/* Special feature */}
-      {/* scene */}
-      {/* Commitment conditions */}
-      {/* Featured gourmet articles */}
       {/* word of mouth */}
       {/* main */}
       {/* sidebar */}
