@@ -51,7 +51,7 @@ const Presenter = () => {
           >
             {/* TODO:DB実装後、データ取得により実装すること。仮で10回繰り返し */}
             {array.map((i) => (
-              <SwiperSlide>
+              <SwiperSlide key={i}>
                 <StyledSlideContainer>
                   <StyledSlideLink href="/" rel="noopener">
                     <StyledSlideImageWrapper>
@@ -100,7 +100,7 @@ const Presenter = () => {
           >
             {/* TODO:DB実装後、データ取得により実装すること。仮で10回繰り返し */}
             {array.map((i) => (
-              <SwiperSlide>
+              <SwiperSlide key={i}>
                 <StyledSlideContainer>
                   <StyledSlideLink href="/" rel="noopener">
                     <StyledSlideImageWrapper>
