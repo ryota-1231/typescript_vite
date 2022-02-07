@@ -4,6 +4,7 @@ import { PrefectureContext } from '../../../contexts/prefectureContext';
 
 import AreaSearch from './areaSearch';
 import AreaSearchDetail from './areaSearchDetail';
+import BottomInfo from './bottomInfo';
 import BottomSearch from './bottomSearch';
 import CommitmentConditions from './commitmentConditions';
 import CookingGenre from './cookingGenre';
@@ -48,6 +49,7 @@ const Presenter = () => {
         <StyledBottomContainer>
           <div css="width: 100%;">
             <BottomSearch />
+            <BottomInfo />
           </div>
         </StyledBottomContainer>
       </StyledBottomWrapper>
