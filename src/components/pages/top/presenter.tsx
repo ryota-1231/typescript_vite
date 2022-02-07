@@ -4,6 +4,7 @@ import { PrefectureContext } from '../../../contexts/prefectureContext';
 
 import AreaSearch from './areaSearch';
 import AreaSearchDetail from './areaSearchDetail';
+import BottomSearch from './bottomSearch';
 import CommitmentConditions from './commitmentConditions';
 import CookingGenre from './cookingGenre';
 import FeaturedGourmet from './featuredGourmet';
@@ -13,6 +14,8 @@ import SidebarColumn from './sidebarColumn';
 import SpecialFeature from './specialFeature';
 import {
   StyledAreaSearchContainer,
+  StyledBottomContainer,
+  StyledBottomWrapper,
   StyledMainColumn,
   StyledMainContainer,
   StyledMainContents,
@@ -41,8 +44,14 @@ const Presenter = () => {
           <SidebarColumn />
         </StyledMainContents>
       </StyledMainContainer>
+      <StyledBottomWrapper>
+        <StyledBottomContainer>
+          <div css="width: 100%;">
+            <BottomSearch />
+          </div>
+        </StyledBottomContainer>
+      </StyledBottomWrapper>
 
-      {/* word of mouth */}
       {/* main */}
       {/* sidebar */}
       {/* counter */}
