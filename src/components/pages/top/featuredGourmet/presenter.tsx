@@ -13,13 +13,12 @@ import {
   StyledSlideImage,
   StyledSlideImageWrapper,
   StyledSlideLink,
-  StyledSlideNextButton,
-  StyledSlidePrevButton,
   StyledSlideSection,
   StyledSlideText,
   StyledSlideWrapper,
   StyledSwiperWrapper,
 } from './style';
+import SwiperButtonComponent from '../../../uiParts/swiperButtonComponent';
 
 const Presenter = () => {
   // TODO:DB実装完了次第削除
@@ -44,6 +43,7 @@ const Presenter = () => {
             navigation={{
               prevEl: '.swiper_top_prev',
               nextEl: '.swiper_top_next',
+              hideOnClick: true,
             }}
             modules={[Navigation]}
             slidesPerView={5}
@@ -70,8 +70,14 @@ const Presenter = () => {
             ))}
           </Swiper>
         </StyledSwiperWrapper>
-        <StyledSlidePrevButton className="swiper_top_prev" />
-        <StyledSlideNextButton className="swiper_top_next" />
+        <SwiperButtonComponent
+          buttonType={'prevButton'}
+          className="swiper_top_prev"
+        />
+        <SwiperButtonComponent
+          buttonType={'nextButton'}
+          className="swiper_top_next"
+        />
       </StyledSlideWrapper>
       <StyledSlideWrapper css="margin-top: 35px;">
         <StyledSlideHeading>
@@ -119,8 +125,14 @@ const Presenter = () => {
             ))}
           </Swiper>
         </StyledSwiperWrapper>
-        <StyledSlidePrevButton className="swiper_bottom_prev" />
-        <StyledSlideNextButton className="swiper_bottom_next" />
+        <SwiperButtonComponent
+          buttonType={'prevButton'}
+          className="swiper_bottom_prev"
+        />
+        <SwiperButtonComponent
+          buttonType={'nextButton'}
+          className="swiper_bottom_next"
+        />
       </StyledSlideWrapper>
     </StyledSlideSection>
   );
