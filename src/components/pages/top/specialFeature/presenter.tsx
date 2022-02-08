@@ -11,11 +11,10 @@ import {
   StyledSlideImage,
   StyledSlideLink,
   StyledSlideMask,
-  StyledSlideNextButton,
-  StyledSlidePrevButton,
   StyledSlideSection,
   StyledSlideWrapper,
 } from './style';
+import SwiperButtonComponent from '../../../uiParts/swiperButtonComponent';
 
 const Presenter = () => (
   <StyledSlideSection>
@@ -158,8 +157,8 @@ const Presenter = () => (
         </SwiperSlide>
       </Swiper>
     </StyledSlideWrapper>
-    <StyledSlidePrevButton className="swiper_prev" />
-    <StyledSlideNextButton className="swiper_next" />
+    <SwiperButtonComponent buttonType={'prevButton'} className="swiper_prev" />
+    <SwiperButtonComponent buttonType={'nextButton'} className="swiper_next" />
   </StyledSlideSection>
 );
 
