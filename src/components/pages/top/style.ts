@@ -28,6 +28,15 @@ export const StyledAreaSearchContainer = styled.div`
   display: flex;
 `;
 
+export const StyledSidebarColumn = styled.div`
+  margin-left: 5.2vw;
+  width: 33vw;
+  min-width: 270px;
+  max-width: 340px;
+  box-sizing: border-box;
+  overflow: hidden;
+`;
+
 export const StyledBottomWrapper = styled.div`
   margin-top: 5rem;
   border-top: 1px solid #f4f4f4;
