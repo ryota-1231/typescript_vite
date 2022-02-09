@@ -35,7 +35,7 @@ export const StyledBottomWrapper = styled.div`
 
 export const StyledBottomContainer = styled.div`
   margin: 0 auto;
-  padding: 0 70px;
+  padding: 35px 70px 0;
   min-width: 1260px;
   max-width: 1540px;
 `;
