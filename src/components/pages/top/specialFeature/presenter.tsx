@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import H2 from '../../../uiParts/h2Component/style';
+import SwiperButtonComponent from '../../../uiParts/swiperButtonComponent';
 
 import {
   StyledSlideFlame,
@@ -14,7 +15,6 @@ import {
   StyledSlideSection,
   StyledSlideWrapper,
 } from './style';
-import SwiperButtonComponent from '../../../uiParts/swiperButtonComponent';
 
 const Presenter = () => (
   <StyledSlideSection>
@@ -157,8 +157,8 @@ const Presenter = () => (
         </SwiperSlide>
       </Swiper>
     </StyledSlideWrapper>
-    <SwiperButtonComponent buttonType={'prevButton'} className="swiper_prev" />
-    <SwiperButtonComponent buttonType={'nextButton'} className="swiper_next" />
+    <SwiperButtonComponent buttonType="prevButton" className="swiper_prev" />
+    <SwiperButtonComponent buttonType="nextButton" className="swiper_next" />
   </StyledSlideSection>
 );
 

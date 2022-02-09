@@ -1,7 +1,9 @@
 import 'swiper/css';
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 import SwiperButtonComponent from '../swiperButtonComponent';
+
 import {
   StyledSlideAreaSpan,
   StyledSlideGenreSpan,
@@ -38,7 +40,7 @@ type PropsType = ClassNameType & {
 const JSXSwiperSlideAward = (data: DataType[], className: string) =>
   data.map((value) => (
     <SwiperSlide key={value.id}>
-      <a css={'display: block;'} href={value.link} rel="noopener">
+      <a css="display: block;" href={value.link} rel="noopener">
         <StyledSlideImageWrapper>
           <StyledSlideImage src={value.imageSrc} alt={value.name} />
           <StyledSlideSpan className={className}>
@@ -69,7 +71,7 @@ const JSXSwiperSlideAward = (data: DataType[], className: string) =>
 const JSXSwiperSlideHyakumeiten = (data: DataType[]) =>
   data.map((value) => (
     <SwiperSlide key={value.id}>
-      <a css={'display: block;'} href={value.link} rel="noopener">
+      <a css="display: block;" href={value.link} rel="noopener">
         <StyledSlideImageWrapper>
           <StyledSlideImage src={value.imageSrc} alt={value.name} />
         </StyledSlideImageWrapper>
@@ -97,16 +99,20 @@ const Presenter = ({ componentType, data, className }: PropsType) => (
         : JSXSwiperSlideHyakumeiten(data)}
     </Swiper>
     <SwiperButtonComponent
-      css={'top: 31%'}
-      buttonType={'prevButton'}
+      css="top: 31%"
+      buttonType="prevButton"
       className={`swiper_${componentType}_prev`}
     />
     <SwiperButtonComponent
-      css={'top: 31%'}
-      buttonType={'nextButton'}
+      css="top: 31%"
+      buttonType="nextButton"
       className={`swiper_${componentType}_next`}
     />
   </div>
 );
+
+Presenter.defaultProps = {
+  className: undefined,
+};
 
 export default Presenter;
