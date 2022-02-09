@@ -39,7 +39,7 @@ export const SwiperPrevButtonComponent = styled(SwiperButton)`
   right: auto;
   left: -31px;
   &.swiper-button-disabled {
-    opacity: 0;
+    display: none;
   }
 `;
 
@@ -47,6 +47,6 @@ export const SwiperNextButtonComponent = styled(SwiperButton)`
   right: -31px;
   left: auto;
   &.swiper-button-disabled {
-    opacity: 0;
+    display: none;
   }
 `;

@@ -7,6 +7,7 @@ import AreaSearchDetail from './areaSearchDetail';
 import BottomAward from './bottomAward';
 import BottomHyakumeiten from './bottomHyakumeiten';
 import BottomInfo from './bottomInfo';
+import BottomReviewer from './bottomReviewer';
 import BottomSearch from './bottomSearch';
 import CommitmentConditions from './commitmentConditions';
 import CookingGenre from './cookingGenre';
@@ -53,6 +54,7 @@ const Presenter = () => {
           <div css="width: 100%;">
             <BottomAward />
             <BottomHyakumeiten />
+            <BottomReviewer />
             <BottomSearch />
             <BottomInfo />
           </div>

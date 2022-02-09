@@ -1,3 +1,10 @@
+import 'swiper/css';
+import { Tabs, TabPanel } from 'react-tabs';
+
+import 'react-tabs/style/react-tabs.css';
+import { HYAKUMEITEN_CONDITIONS } from '../../../../utils/commitmentConditions';
+import SwiperComponent from '../../../uiParts/swiperComponent';
+
 import {
   StyledHeading,
   StyledMoreLink,
@@ -6,12 +13,6 @@ import {
   StyledTab,
   StyledTabList,
 } from './style';
-
-import 'swiper/css';
-import { Tabs, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
-import { HYAKUMEITEN_CONDITIONS } from '../../../../utils/commitmentConditions';
-import SwiperComponent from '../../../uiParts/swiperComponent';
 
 const Presenter = () => (
   <StyledSection>
@@ -25,25 +26,25 @@ const Presenter = () => (
       {/* Gold */}
       <TabPanel>
         <SwiperComponent
-          componentType={'award'}
+          componentType="award"
           data={HYAKUMEITEN_CONDITIONS}
-          className={'is_gold'}
+          className="is_gold"
         />
       </TabPanel>
       {/* Silver */}
       <TabPanel>
         <SwiperComponent
-          componentType={'award'}
+          componentType="award"
           data={HYAKUMEITEN_CONDITIONS}
-          className={'is_silver'}
+          className="is_silver"
         />
       </TabPanel>
       {/* Bronze */}
       <TabPanel>
         <SwiperComponent
-          componentType={'award'}
+          componentType="award"
           data={HYAKUMEITEN_CONDITIONS}
-          className={'is_bronze'}
+          className="is_bronze"
         />
       </TabPanel>
     </Tabs>
@@ -56,7 +57,7 @@ const Presenter = () => (
         <span>The Tabelog Award 2022 発表ページへ</span>
       </StyledMoreLink>
       <StyledMoreLink
-        css={'margin-left: 24px;'}
+        css="margin-left: 24px;"
         data-analytics-btn="TOP_award_awardlist"
         href="/rstLst/?award_prize%5B%5D=3"
       >

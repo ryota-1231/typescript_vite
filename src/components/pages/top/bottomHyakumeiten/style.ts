@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
-import Color from '../../../../styles/const/Color';
 
+import Color from '../../../../styles/const/Color';
 import H2 from '../../../uiParts/h2Component/style';
 
 export const StyledSection = styled.section`

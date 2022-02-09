@@ -1,13 +1,13 @@
+import 'swiper/css';
+import { HYAKUMEITEN_CONDITIONS } from '../../../../utils/commitmentConditions';
+import SwiperComponent from '../../../uiParts/swiperComponent';
+
 import {
   StyledHeading,
   StyledMoreLink,
   StyledMoreLinkWrapper,
-  StyledSection
+  StyledSection,
 } from './style';
-
-import 'swiper/css';
-import { HYAKUMEITEN_CONDITIONS } from '../../../../utils/commitmentConditions';
-import SwiperComponent from '../../../uiParts/swiperComponent';
 
 const Presenter = () => (
   <StyledSection>
@@ -20,7 +20,7 @@ const Presenter = () => (
       data={HYAKUMEITEN_CONDITIONS}
     />
     <StyledMoreLinkWrapper>
-      <p css={'display: inline-block;'}>
+      <p css="display: inline-block;">
         <StyledMoreLink
           href="https://award.tabelog.com/hyakumeiten/"
           target="_blank"

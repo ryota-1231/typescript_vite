@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import H2 from '../../../uiParts/h2Component/style';
 import H3 from '../../../uiParts/h3Component/style';
+import SwiperButtonComponent from '../../../uiParts/swiperButtonComponent';
 
 import {
   StyledSlideContainer,
@@ -18,7 +19,6 @@ import {
   StyledSlideWrapper,
   StyledSwiperWrapper,
 } from './style';
-import SwiperButtonComponent from '../../../uiParts/swiperButtonComponent';
 
 const Presenter = () => {
   // TODO:DB実装完了次第削除
@@ -71,11 +71,11 @@ const Presenter = () => {
           </Swiper>
         </StyledSwiperWrapper>
         <SwiperButtonComponent
-          buttonType={'prevButton'}
+          buttonType="prevButton"
           className="swiper_top_prev"
         />
         <SwiperButtonComponent
-          buttonType={'nextButton'}
+          buttonType="nextButton"
           className="swiper_top_next"
         />
       </StyledSlideWrapper>
@@ -126,11 +126,11 @@ const Presenter = () => {
           </Swiper>
         </StyledSwiperWrapper>
         <SwiperButtonComponent
-          buttonType={'prevButton'}
+          buttonType="prevButton"
           className="swiper_bottom_prev"
         />
         <SwiperButtonComponent
-          buttonType={'nextButton'}
+          buttonType="nextButton"
           className="swiper_bottom_next"
         />
       </StyledSlideWrapper>
