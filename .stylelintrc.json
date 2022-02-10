@@ -6,7 +6,7 @@
   ],
   "overrides": [
     {
-      "files": ["**/*.jsx", "**/*.tsx"],
+      "files": ["**/*.jsx", "**/*.tsx", "**/*.ts"],
       "customSyntax": "@stylelint/postcss-css-in-js",
       "rules": {
         "selector-max-type": 1,
