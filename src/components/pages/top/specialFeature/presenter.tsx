@@ -2,7 +2,7 @@ import { Autoplay, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
-import H2 from '../../../uiParts/h2Component/style';
+import H2Component from '../../../uiParts/h2Component';
 import SwiperButtonComponent from '../../../uiParts/swiperButtonComponent';
 
 import {
@@ -18,7 +18,7 @@ import {
 
 const Presenter = () => (
   <StyledSlideSection>
-    <H2>特集</H2>
+    <H2Component>特集</H2Component>
     <StyledSlideWrapper>
       <Swiper
         spaceBetween={30}

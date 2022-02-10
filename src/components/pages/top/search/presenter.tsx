@@ -1,4 +1,4 @@
-import H2 from '../../../uiParts/h2Component/style';
+import H2Component from '../../../uiParts/h2Component';
 
 import {
   StyledContents,
@@ -18,7 +18,7 @@ const Presenter = () => (
   <StyledWrapper>
     <StyledContents>
       <StyledTitle>
-        <H2>日時、人数から探す</H2>
+        <H2Component>日時、人数から探す</H2Component>
       </StyledTitle>
       <StyledSearch>
         <StyledForm>

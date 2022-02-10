@@ -1,4 +1,4 @@
-import H2 from '../../../uiParts/h2Component/style';
+import H2Component from '../../../uiParts/h2Component';
 
 import {
   StyledInfoContainer,
@@ -18,7 +18,7 @@ const Presenter = () => (
   <StyledInfoWrapper>
     <StyledInfoContainer>
       <div css="width: 30%;">
-        <H2>レストラン新規登録</H2>
+        <H2Component>レストラン新規登録</H2Component>
         <StyledInfoContents>
           <StyledInfoEntryGuide>
             お店が登録されていない場合はレストラン新規登録ページから登録を行うことができます。
@@ -31,7 +31,7 @@ const Presenter = () => (
         </StyledInfoContents>
       </div>
       <div css="width: 30%;">
-        <H2>店舗運営者の方へ</H2>
+        <H2Component>店舗運営者の方へ</H2Component>
         <ul>
           <StyledInfoList>
             <StyledInfoSubject>
@@ -56,7 +56,7 @@ const Presenter = () => (
         </ul>
       </div>
       <div css="width: 30%;">
-        <H2>お得なキャンペーン&プレゼント</H2>
+        <H2Component>お得なキャンペーン&プレゼント</H2Component>
         <ul>
           <StyledInfoList>
             <StyledInfoListLink href="https://campaign.tabelog.com/points/tpoint/">

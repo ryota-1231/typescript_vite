@@ -1,5 +1,5 @@
 import { PRIMARY_SCENE, SUB_SCENE } from '../../../../utils/scene';
-import H1 from '../../../uiParts/h1Component/style';
+import H1Component from '../../../uiParts/h1Component';
 import ListComponent from '../../../uiParts/listComponent';
 import ListPhotoComponent from '../../../uiParts/listPhotoComponent';
 
@@ -7,7 +7,7 @@ import StyledPhotoUl from './style';
 
 const Presenter = () => (
   <section css="margin-top: 30px">
-    <H1>利用シーンから探す</H1>
+    <H1Component>利用シーンから探す</H1Component>
     <div css="margin-top: 20px">
       <StyledPhotoUl>
         {PRIMARY_SCENE.map((genre) => (
@@ -17,7 +17,7 @@ const Presenter = () => (
             imageSrc={genre.imageSrc}
             link={genre.link}
             number={genre.number}
-            fontSize="15.8px"
+            fontsize="15.8px"
           />
         ))}
       </StyledPhotoUl>

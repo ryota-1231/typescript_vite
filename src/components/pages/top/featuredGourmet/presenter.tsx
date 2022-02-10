@@ -2,8 +2,8 @@ import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
-import H2 from '../../../uiParts/h2Component/style';
-import H3 from '../../../uiParts/h3Component/style';
+import H2Component from '../../../uiParts/h2Component';
+import H3Component from '../../../uiParts/h3Component';
 import SwiperButtonComponent from '../../../uiParts/swiperButtonComponent';
 
 import {
@@ -26,10 +26,10 @@ const Presenter = () => {
 
   return (
     <StyledSlideSection>
-      <H2>注目のグルメ記事</H2>
+      <H2Component>注目のグルメ記事</H2Component>
       <StyledSlideWrapper>
         <StyledSlideHeading>
-          <H3>食べログマガジン 新着記事</H3>
+          <H3Component>食べログマガジン 新着記事</H3Component>
           <StyledSlideHeadingLogoLink
             href="https://magazine.tabelog.com/"
             target="_blank"
@@ -81,10 +81,10 @@ const Presenter = () => {
       </StyledSlideWrapper>
       <StyledSlideWrapper css="margin-top: 35px;">
         <StyledSlideHeading>
-          <H3>
+          <H3Component>
             <span css="font-weight: bold;">東京都</span>の食べログまとめ
             アクセスランキング
-          </H3>
+          </H3Component>
           <StyledSlideHeadingMatomeLogoLink
             href="https://tabelog.com/matome/"
             target="_blank"

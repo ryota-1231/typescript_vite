@@ -1,4 +1,4 @@
-import H2 from '../../../uiParts/h2Component/style';
+import H2Component from '../../../uiParts/h2Component';
 
 import {
   StyledBannerContainer,
@@ -40,7 +40,7 @@ type PropsType = {
 
 const Presenter = ({ array, handleClickReadMore }: PropsType) => (
   <section css="margin-top: 50px;">
-    <H2>口コミから探す</H2>
+    <H2Component>口コミから探す</H2Component>
     <div>
       <StyledBannerWrapper>
         <StyledBannerContainer>
