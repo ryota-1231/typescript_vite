@@ -52,7 +52,6 @@ const Presenter = () => {
                 type="text"
                 name=""
                 id=""
-                value=""
                 placeholder="ユーザー名"
               />
             </div>

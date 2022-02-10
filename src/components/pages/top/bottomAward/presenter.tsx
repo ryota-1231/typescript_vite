@@ -28,7 +28,7 @@ const Presenter = () => (
         <SwiperComponent
           componentType="award"
           data={HYAKUMEITEN_CONDITIONS}
-          className="is_gold"
+          className="isGold"
         />
       </TabPanel>
       {/* Silver */}
@@ -36,7 +36,7 @@ const Presenter = () => (
         <SwiperComponent
           componentType="award"
           data={HYAKUMEITEN_CONDITIONS}
-          className="is_silver"
+          className="isSilver"
         />
       </TabPanel>
       {/* Bronze */}
@@ -44,7 +44,7 @@ const Presenter = () => (
         <SwiperComponent
           componentType="award"
           data={HYAKUMEITEN_CONDITIONS}
-          className="is_bronze"
+          className="isBronze"
         />
       </TabPanel>
     </Tabs>

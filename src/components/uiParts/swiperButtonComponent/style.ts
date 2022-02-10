@@ -3,41 +3,43 @@ import styled from 'styled-components/macro';
 const SwiperButton = styled.div`
   position: absolute;
   top: 50%;
-  border-radius: 50%;
+  z-index: 10;
   width: 44px;
   height: 44px;
-  box-shadow: 0 0 3px 0 rgb(0 0 0 / 25%);
-  opacity: 0.9;
+  margin-top: -6px;
+  cursor: pointer;
   background-color: #fff;
   background-image: none;
-  transition: 0.2s;
-  margin-top: -6px;
-  z-index: 10;
-  cursor: pointer;
-  background-size: 27px 44px;
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 27px 44px;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 25%);
+  opacity: 0.9;
+  transition: 0.2s;
+
   &::after {
+    position: absolute;
+    top: 50%;
     right: auto;
     left: 50%;
-    color: #999;
-    font-family: 'Tabelog Glyph';
+    font-family: 'Tabelog Glyph', sans-serif;
+    font-size: 22px;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
-    -webkit-font-smoothing: antialiased;
+    color: #999;
     text-transform: none;
     content: '\f641';
-    position: absolute;
-    top: 50%;
-    font-size: 22px;
     transform: translate(-50%, -50%);
+    -webkit-font-smoothing: antialiased;
   }
 `;
 
 export const SwiperPrevButtonComponent = styled(SwiperButton)`
   right: auto;
   left: -31px;
+
   &.swiper-button-disabled {
     display: none;
   }
@@ -46,6 +48,7 @@ export const SwiperPrevButtonComponent = styled(SwiperButton)`
 export const SwiperNextButtonComponent = styled(SwiperButton)`
   right: -31px;
   left: auto;
+
   &.swiper-button-disabled {
     display: none;
   }

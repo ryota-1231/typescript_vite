@@ -1,9 +1,9 @@
 import styled from 'styled-components/macro';
 
 const H3 = styled.h3`
-  color: #595960;
-  font-weight: 600;
   font-size: 13px;
+  font-weight: 600;
+  color: #595960;
   letter-spacing: 0.3px;
 `;
 

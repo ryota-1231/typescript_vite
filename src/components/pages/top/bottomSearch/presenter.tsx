@@ -1,6 +1,6 @@
 import { OTHER_CONDITIONS } from '../../../../utils/commitmentConditions';
 import { SUB_COOKING_GENRE } from '../../../../utils/cookingGenre';
-import H2 from '../../../uiParts/h2Component/style';
+import H2Component from '../../../uiParts/h2Component';
 
 import {
   StyledListComponent,
@@ -12,7 +12,7 @@ import {
 const Presenter = () => (
   <StyledSearchSection>
     <div css="width: 48%;">
-      <H2>ジャンル別ランキングから探す</H2>
+      <H2Component>ジャンル別ランキングから探す</H2Component>
       <ul css="margin-top: 15px;">
         {SUB_COOKING_GENRE.map((genre) => (
           <StyledListComponent
@@ -29,7 +29,7 @@ const Presenter = () => (
       </StyledMoreLinkWrapper>
     </div>
     <div css="width: 48%;">
-      <H2>その他条件、目的から探す</H2>
+      <H2Component>その他条件、目的から探す</H2Component>
       <ul css="margin-top: 15px;">
         {OTHER_CONDITIONS.map((genre) => (
           <StyledListComponent

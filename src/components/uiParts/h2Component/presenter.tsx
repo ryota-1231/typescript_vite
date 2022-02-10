@@ -1,10 +1,18 @@
+import { ReactNode } from 'react';
+
 import H2 from './style';
 
-/**
- * h2のコンポーネント
- * @param <なし>
- * @returns <h2></h2>
- */
-const Presenter = () => <H2 />;
+type PropsType = {
+  className?: string;
+  children: ReactNode;
+};
+
+const Presenter = ({ className, children }: PropsType) => (
+  <H2 className={className}>{children}</H2>
+);
+
+Presenter.defaultProps = {
+  className: '',
+};
 
 export default Presenter;

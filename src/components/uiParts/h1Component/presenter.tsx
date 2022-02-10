@@ -1,10 +1,17 @@
+import { ReactNode } from 'react';
+
 import H1 from './style';
 
-/**
- * h1のコンポーネント
- * @param <なし>
- * @returns <h1></h1>
- */
-const Presenter = () => <H1 />;
+type PropsType = {
+  className?: string;
+  children: ReactNode;
+};
 
+const Presenter = ({ className, children }: PropsType) => (
+  <H1 className={className}>{children}</H1>
+);
+
+Presenter.defaultProps = {
+  className: '',
+};
 export default Presenter;

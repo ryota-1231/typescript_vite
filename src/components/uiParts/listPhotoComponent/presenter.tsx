@@ -12,7 +12,7 @@ type PropsType = {
   imageSrc: string;
   link: string;
   number: number;
-  fontSize?: string;
+  fontsize?: string;
   className?: string;
 };
 
@@ -22,11 +22,11 @@ type PropsType = {
  * @param imageSrc <imgタグのsrc>
  * @param link <aタグlink>
  * @param number <件数>
- * @param fontSize <font-sizeのpx>
+ * @param fontsize <font-sizeのpx>
  * @param className <null許可/SC拡張用>
  */
 const Presenter = (props: PropsType) => {
-  const { text, imageSrc, link, number, fontSize, className } = props;
+  const { text, imageSrc, link, number, fontsize, className } = props;
   return (
     <List className={className}>
       <StyledImageWrapper>
@@ -34,7 +34,7 @@ const Presenter = (props: PropsType) => {
       </StyledImageWrapper>
       <Link href={link}>
         <StyledPhotoListWrapper>
-          <StyledPhotoListSubject fontSize={fontSize}>
+          <StyledPhotoListSubject fontsize={fontsize}>
             {text}
           </StyledPhotoListSubject>
           <StyledPhotoListCount>
@@ -48,7 +48,7 @@ const Presenter = (props: PropsType) => {
 };
 
 Presenter.defaultProps = {
-  fontSize: null,
+  fontsize: null,
   className: null,
 };
 

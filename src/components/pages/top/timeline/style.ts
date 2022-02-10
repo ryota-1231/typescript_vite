@@ -4,15 +4,15 @@ import Color from '../../../../styles/const/Color';
 import loader from '../../../../styles/const/LoaderKeyframes';
 
 export const StyledBannerWrapper = styled.p`
+  box-sizing: border-box;
   display: block;
   width: 100%;
-  margin: 15px 0 18px;
   padding: 10px;
+  margin: 15px 0 18px;
+  text-align: center;
+  cursor: pointer;
   background: #f3f3f3;
   border: 1px solid #e9e9e9;
-  text-align: center;
-  box-sizing: border-box;
-  cursor: pointer;
 `;
 
 export const StyledBannerContainer = styled.span`
@@ -29,50 +29,51 @@ export const StyledBannerIcon = styled.span`
 
 export const StyledBannerTitle = styled.span`
   display: inline-block;
-  color: ${Color.LINK};
+  font-size: 14px;
   font-weight: bold;
+  color: ${Color.LINK};
   text-align: left;
   text-decoration: none;
   vertical-align: middle;
-  font-size: 14px;
 `;
 
 export const StyledTimelineContents = styled.div`
   display: flex;
-  margin-top: 12px;
-  width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
+  margin-top: 12px;
 `;
 
 const timelineOpen = keyframes`
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 `;
 
 export const StyledTimelineBox = styled.div`
-  animation: ${timelineOpen} 3s cubic-bezier(0, 0, 0.2, 1) forwards;
-  animation-delay: 0.3s;
   position: relative;
+  width: 49%;
+  height: auto;
   margin: 14px 0;
   border: 1px solid #e0dccc;
   border-radius: 5px;
-  width: 49%;
-  height: auto;
   box-shadow: 0 1px 2px -2px rgb(0 0 0 / 70%);
   opacity: 0;
+  animation: ${timelineOpen} 3s cubic-bezier(0, 0, 0.2, 1) forwards;
+  animation-delay: 0.3s;
 `;
 
 export const StyledTimelineBoxInner = styled.div`
   position: relative;
   z-index: 1;
-  padding: 16px 1.3vw 20px;
   width: 100%;
   height: 100%;
+  padding: 16px 1.3vw 20px;
 `;
 
 export const StyledTimelineBoxMenu = styled.div`
@@ -94,36 +95,37 @@ export const StyledTimelineBoxButtonItem = styled.p`
 `;
 
 export const StyledTimelineBoxButtonLink = styled.a`
+  box-sizing: border-box;
   display: block;
-  cursor: pointer;
-  margin: 0;
-  outline: none;
-  border: 1px solid transparent;
-  border-radius: 3px;
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
+  margin: 0;
   font-weight: bold;
-  text-indent: -9999px;
-  text-align: center;
   line-height: normal;
+  text-align: center;
+  text-indent: -9999px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  outline: none;
   appearance: none;
+
   &::before {
-    font-family: 'Tabelog Glyph';
-    -webkit-font-smoothing: antialiased;
-    text-transform: none;
-    content: '\f67a';
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -0.5em 0 0 -0.5em;
     width: 1em;
     height: 1em;
-    color: #999;
+    margin: -0.5em 0 0 -0.5em;
+    font-family: 'Tabelog Glyph', sans-serif;
     font-size: 1.6rem;
-    text-indent: 0;
-    vertical-align: middle;
     line-height: 1;
+    color: #999;
+    text-indent: 0;
+    text-transform: none;
+    vertical-align: middle;
+    content: '\f67a';
+    -webkit-font-smoothing: antialiased;
   }
 `;
 
@@ -134,28 +136,28 @@ export const StyledTimelineBoxData = styled.div`
 `;
 
 export const StyledTimelineBoxImageWrapper = styled.span`
+  box-sizing: border-box;
   display: block;
-  padding: 3px;
-  border: 1px solid #e1e1e1;
-  border-radius: 6px;
   width: 50px;
   height: 50px;
-  box-sizing: border-box;
+  padding: 3px;
   background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
   transition: 0.1s ease-in-out;
 `;
 
 export const StyledTimelineBoxImage = styled.img`
-  border-radius: 3px;
   width: 100%;
   height: auto;
+  border-radius: 3px;
 `;
 
 export const StyledTimelineBoxTitle = styled.span`
-  color: #13131e;
-  font-weight: 600;
   font-size: 0.975vw;
+  font-weight: 600;
   line-height: 1.53;
+  color: #13131e;
   transition: 0.1s ease-in-out;
 `;
 
@@ -168,8 +170,8 @@ export const StyledTimelineBoxUpdate = styled.span`
 
 export const StyledTimelineBoxInfo = styled.div`
   position: relative;
-  padding-top: 2px;
   min-height: 3em;
+  padding-top: 2px;
 `;
 
 export const StyledTimelineBoxInfoLink = styled.a`
@@ -178,35 +180,35 @@ export const StyledTimelineBoxInfoLink = styled.a`
 `;
 
 export const StyledTimelineBoxInfoTitle = styled.p`
-  font-size: 1.17vw;
-  line-height: 1.75;
-  display: inline;
   position: relative;
   z-index: 2;
+  display: inline;
   margin-top: 14px;
-  color: #13131e;
+  font-size: 1.17vw;
   font-weight: 600;
+  line-height: 1.75;
+  color: #13131e;
   ${StyledTimelineBoxInfoLink}:hover & {
-    border-bottom: 1px solid #ff9600;
     color: #ff9600;
+    border-bottom: 1px solid #ff9600;
   }
 `;
 
 export const StyledTimelineBoxInfoComment = styled.p`
   margin-top: 10px;
   font-size: 0.975vw;
-  color: #13131e;
   line-height: 1.58;
+  color: #13131e;
 `;
 
 export const StyledTimelineBoxInfoDetail = styled.p`
   display: block;
-  cursor: pointer;
   margin: 2px 0 0;
-  color: ${Color.LINK};
-  font-weight: 600;
   font-size: 0.786vw;
+  font-weight: 600;
+  color: ${Color.LINK};
   text-align: right;
+  cursor: pointer;
   ${StyledTimelineBoxInfoLink}:hover & {
     color: #ff9600;
   }
@@ -218,9 +220,9 @@ export const StyledTimelineBoxInfoPhoto = styled.div`
 `;
 
 export const StyledTimelineBoxInfoList = styled.li`
-  padding-bottom: 50%;
-  width: 100%;
   position: relative;
+  width: 100%;
+  padding-bottom: 50%;
   overflow: hidden;
 `;
 
@@ -228,9 +230,9 @@ export const StyledTimelineBoxInfoImage = styled.img`
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
   height: auto;
+  transform: translate(-50%, -50%);
 `;
 
 export const StyledTimelineReadMore = styled.div`
@@ -239,13 +241,14 @@ export const StyledTimelineReadMore = styled.div`
 `;
 
 export const StyledTimelineText = styled.span`
-  color: ${Color.LINK};
-  font-weight: 600;
   font-size: 15px;
+  font-weight: 600;
+  color: ${Color.LINK};
+
   &:hover {
-    cursor: pointer;
     color: #ff9600;
     text-decoration: underline;
+    cursor: pointer;
   }
 `;
 
@@ -256,32 +259,34 @@ export const StyledTimelineLoading = styled.div`
 `;
 
 export const StyledTimelineLoadingSpan = styled.span`
-  display: inline-block;
   position: relative;
+  display: inline-block;
   width: 5rem;
   height: 5rem;
+
   &::before {
-    line-height: 1.53846;
+    position: relative;
+    display: block;
     width: 5rem;
     height: 5rem rem;
+    font-family: 'Tabelog Glyph', sans-serif;
     font-size: 3rem;
-    display: block;
-    position: relative;
-    color: rgba(89, 89, 96, 0.85);
+    line-height: 1.5385;
+    color: rgb(89 89 96 / 85%);
     text-align: center;
-    font-family: 'Tabelog Glyph';
-    -webkit-font-smoothing: antialiased;
     text-transform: none;
     content: '\f6b0';
+    -webkit-font-smoothing: antialiased;
   }
+
   &::after {
-    margin: 2.25rem;
-    width: 0.5rem;
-    height: 0.5rem;
-    font-size: 2.15rem;
     position: absolute;
     top: 0;
     left: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 2.25rem;
+    font-size: 2.15rem;
     content: '';
     border-radius: 50%;
     animation: ${loader} 0.8s infinite ease;
@@ -289,14 +294,15 @@ export const StyledTimelineLoadingSpan = styled.span`
 `;
 
 export const StyledMoreLinkWrapper = styled.div`
-  text-align: right;
   margin: 20px 15px 0;
   font-size: 13px;
+  text-align: right;
 `;
 
 export const StyledMoreLink = styled.a`
   display: inline-block;
   cursor: pointer;
+
   &:hover {
     color: #ff9600;
   }

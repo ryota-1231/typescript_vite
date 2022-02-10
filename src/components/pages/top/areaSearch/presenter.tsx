@@ -1,6 +1,6 @@
 import { PREFECTURES } from '../../../../utils/area';
-import H1 from '../../../uiParts/h1Component/style';
-import H3 from '../../../uiParts/h3Component/style';
+import H1Component from '../../../uiParts/h1Component';
+import H3Component from '../../../uiParts/h3Component';
 
 import {
   StyledAreaList,
@@ -34,7 +34,7 @@ const Presenter = ({
 }: PrefectureType) => (
   <StyledSection isDisplay={isDisplay}>
     <StyledHeading>
-      <H1>エリアから探す</H1>
+      <H1Component>エリアから探す</H1Component>
     </StyledHeading>
     <StyledAreaUl>
       <StyledAreaList
@@ -169,7 +169,7 @@ const Presenter = ({
         const localKey: string = Object.keys(obj)[0];
         return (
           <StyledPrefSet key={localKey}>
-            <H3>{localKey}</H3>
+            <H3Component>{localKey}</H3Component>
             <StyledPrefUl>
               {obj[localKey].map((prefecture) => (
                 <StyledPrefList key={prefecture.id}>

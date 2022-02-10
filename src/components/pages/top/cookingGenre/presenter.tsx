@@ -2,7 +2,7 @@ import {
   PRIMARY_COOKING_GENRE,
   SUB_COOKING_GENRE,
 } from '../../../../utils/cookingGenre';
-import H1 from '../../../uiParts/h1Component/style';
+import H1Component from '../../../uiParts/h1Component';
 import ListComponent from '../../../uiParts/listComponent';
 import ListPhotoComponent from '../../../uiParts/listPhotoComponent';
 
@@ -10,7 +10,7 @@ import { StyledMoreLink, StyledPhotoUl } from './style';
 
 const Presenter = () => (
   <section css="margin-top: 30px">
-    <H1>料理ジャンルから探す</H1>
+    <H1Component>料理ジャンルから探す</H1Component>
     <div css="margin-top: 20px">
       <StyledPhotoUl>
         {PRIMARY_COOKING_GENRE.map((genre) => (

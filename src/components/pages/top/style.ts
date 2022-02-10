@@ -1,18 +1,18 @@
 import styled from 'styled-components/macro';
 
 export const StyledMainContainer = styled.div`
-  padding-top: 100px;
-  min-width: 1260px;
   width: 100%;
+  min-width: 1260px;
+  padding-top: 100px;
 `;
 
 export const StyledMainContents = styled.div`
   display: flex;
-  margin: 0 auto;
-  padding: 0 70px;
+  justify-content: space-between;
   min-width: 1260px;
   max-width: 1540px;
-  justify-content: space-between;
+  padding: 0 70px;
+  margin: 0 auto;
 `;
 
 export const StyledMainColumn = styled.div`
@@ -24,8 +24,17 @@ export const StyledMainColumn = styled.div`
 export const StyledAreaSearchContainer = styled.div`
   position: relative;
   z-index: 2;
-  min-height: 485px;
   display: flex;
+  min-height: 485px;
+`;
+
+export const StyledSidebarColumn = styled.div`
+  box-sizing: border-box;
+  width: 33vw;
+  min-width: 270px;
+  max-width: 340px;
+  margin-left: 5.2vw;
+  overflow: hidden;
 `;
 
 export const StyledBottomWrapper = styled.div`
@@ -34,8 +43,8 @@ export const StyledBottomWrapper = styled.div`
 `;
 
 export const StyledBottomContainer = styled.div`
-  margin: 0 auto;
-  padding: 35px 70px 0;
   min-width: 1260px;
   max-width: 1540px;
+  padding: 35px 70px 0;
+  margin: 0 auto;
 `;

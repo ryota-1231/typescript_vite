@@ -15,7 +15,8 @@ import FeaturedGourmet from './featuredGourmet';
 import Footer from './footer';
 import Header from './header';
 import Scene from './scene';
-import SidebarColumn from './sidebarColumn';
+import SidebarCount from './sidebarCount';
+import SidebarUserInfo from './sidebarUserInfo';
 import SpecialFeature from './specialFeature';
 import {
   StyledAreaSearchContainer,
@@ -24,6 +25,7 @@ import {
   StyledMainColumn,
   StyledMainContainer,
   StyledMainContents,
+  StyledSidebarColumn,
 } from './style';
 import Timeline from './timeline';
 
@@ -46,7 +48,10 @@ const Presenter = () => {
             <FeaturedGourmet />
             <Timeline />
           </StyledMainColumn>
-          <SidebarColumn />
+          <StyledSidebarColumn>
+            <SidebarCount />
+            <SidebarUserInfo />
+          </StyledSidebarColumn>
         </StyledMainContents>
       </StyledMainContainer>
       <StyledBottomWrapper>

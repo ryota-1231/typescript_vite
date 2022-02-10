@@ -1,21 +1,22 @@
 import styled from 'styled-components/macro';
 
 import Color from '../../../../styles/const/Color';
-import H2 from '../../../uiParts/h2Component/style';
+import H2Component from '../../../uiParts/h2Component';
 
 export const StyledSection = styled.section`
-  margin-top: 50px;
   position: relative;
   width: 100%;
+  margin-top: 50px;
 `;
 
-export const StyledHeading = styled(H2)`
+export const StyledHeading = styled(H2Component)`
   margin-bottom: 20px;
+
   > span {
     margin-left: 20px;
-    color: #949499;
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 400;
+    color: #949499;
   }
 `;
 
@@ -28,9 +29,11 @@ export const StyledMoreLinkWrapper = styled.div`
 export const StyledMoreLink = styled.a`
   display: inline-block;
   cursor: pointer;
+
   &:hover {
     color: ${Color.HOVER};
   }
+
   > span {
     vertical-align: middle;
   }

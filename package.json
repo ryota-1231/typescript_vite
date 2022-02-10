@@ -9,8 +9,8 @@
     "serve": "vite preview",
     "eslint": "eslint --ignore-path .gitignore .  --ext .js,.jsx,.ts,.tsx",
     "eslint-fix": "eslint --fix --ignore-path .gitignore . --ext .js,.jsx,.ts,.tsx",
-    "stylelint": "stylelint ./src/**/*.{css,jsx,.tsx}",
-    "stylelint-fix": "stylelint --fix ./src/**/*.{css,jsx,.tsx}",
+    "stylelint": "stylelint ./src/**/*.css, ./src/**/style.ts",
+    "stylelint-fix": "stylelint --fix ./src/**/*.css, ./src/**/style.ts",
     "prettier": "prettier --check --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'",
     "prettier-fix": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'"
   },
