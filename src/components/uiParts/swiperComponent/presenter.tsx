@@ -24,7 +24,7 @@ type DataType = {
 };
 
 type ClassNameType = {
-  className?: 'is_gold' | 'is_silver' | 'is_bronze' | undefined;
+  className?: 'isGold' | 'isSilver' | 'isBronze' | undefined;
 };
 
 type PropsType = ClassNameType & {
