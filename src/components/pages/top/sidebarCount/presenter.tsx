@@ -5,14 +5,15 @@ import {
   StyledCountItemUnitSpan,
   StyledCountItemFrame,
   StyledCountItemFrameSpan,
+  StyledCountLink,
 } from './style';
 
 const Presenter = () => (
   <StyledCountWrapper>
     <StyledCountItem>
-      <a
+      <StyledCountLink
         href="https://tabelog.com/sitemap/"
-        className="sidebar_store_count_link"
+        className="store_count"
       >
         <StyledCountItemSpan>
           81
@@ -21,7 +22,7 @@ const Presenter = () => (
         <StyledCountItemFrame>
           <StyledCountItemFrameSpan>店舗</StyledCountItemFrameSpan>
         </StyledCountItemFrame>
-      </a>
+      </StyledCountLink>
     </StyledCountItem>
     <StyledCountItem>
       <p>

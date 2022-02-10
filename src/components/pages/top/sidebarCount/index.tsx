@@ -1,4 +1,3 @@
-
 import Presenter from './presenter';
 
 /** サイドバー：カウントコンポーネント */

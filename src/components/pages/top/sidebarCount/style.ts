@@ -2,69 +2,79 @@ import styled from 'styled-components/macro';
 
 export const StyledCountWrapper = styled.div`
   display: flex;
-  margin-bottom: 23px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 23px;
 `;
 
 export const StyledCountItem = styled.div`
   position: relative;
   padding: 0 15px;
-  color: #595960;
-  font-family: Arial;
-  font-weight: 500;
+  font-family: Arial, sans-serif;
   font-size: 24px;
-  text-align: center;
+  font-weight: 500;
   line-height: 1.4;
+  color: #595960;
+  text-align: center;
+
   &:first-child {
     padding-left: 0;
+
     &::after {
       position: absolute;
       top: 50%;
       right: 0;
       width: 1px;
       height: 85%;
-      background-color: #f4f4f4;
       content: '';
+      background-color: #f4f4f4;
       transform: translateY(-50%);
     }
   }
+
   &:last-child {
     padding-right: 0;
+
     &::before {
       position: absolute;
       top: 50%;
       left: 0;
       width: 1px;
       height: 85%;
-      background-color: #f4f4f4;
       content: '';
+      background-color: #f4f4f4;
       transform: translateY(-50%);
     }
   }
 `;
 
+export const StyledCountLink = styled.a`
+  text-decoration: none;
+`;
+
 export const StyledCountItemSpan = styled.span`
-  display: block;
   position: relative;
-  color: #595960;
+  display: block;
   font-size: 24px;
+  color: #595960;
 `;
 
 export const StyledCountItemUnitSpan = styled.span`
   margin-left: 1px;
-  color: #595960;
   font-size: 12px;
+  color: #595960;
+
   &::before {
-    display: block;
     position: absolute;
     bottom: 4px;
+    display: block;
     width: 100%;
     height: 1px;
     content: '';
     background-color: transparent;
   }
-  .sidebar_store_count_link:hover &::before {
+
+  ${StyledCountLink}:hover &::before {
     background-color: #949499;
   }
 `;
@@ -77,18 +87,20 @@ export const StyledCountItemFrame = styled.p`
 export const StyledCountItemFrameSpan = styled.span`
   position: relative;
   display: inline-block;
-  color: #595960;
   font-size: 12px;
+  color: #595960;
+
   &::after {
-    display: block;
     position: absolute;
     bottom: -1px;
+    display: block;
     width: 100%;
     height: 1px;
     content: '';
     background-color: transparent;
   }
-  .sidebar_store_count_link:hover &::after {
+
+  ${StyledCountLink}:hover &::after {
     background-color: #949499;
   }
 `;

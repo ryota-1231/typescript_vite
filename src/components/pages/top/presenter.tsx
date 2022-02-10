@@ -16,6 +16,7 @@ import Footer from './footer';
 import Header from './header';
 import Scene from './scene';
 import SidebarCount from './sidebarCount';
+import SidebarUserInfo from './sidebarUserInfo';
 import SpecialFeature from './specialFeature';
 import {
   StyledAreaSearchContainer,
@@ -49,6 +50,7 @@ const Presenter = () => {
           </StyledMainColumn>
           <StyledSidebarColumn>
             <SidebarCount />
+            <SidebarUserInfo />
           </StyledSidebarColumn>
         </StyledMainContents>
       </StyledMainContainer>
