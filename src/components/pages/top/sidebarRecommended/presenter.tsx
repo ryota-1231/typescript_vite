@@ -19,7 +19,7 @@ const Presenter = () => (
           <StyledRecommendedLink href={content.link} target="_blank">
             <div css="padding: 0 6% 0 5px;">
               <StyledRecommendedImage
-                imageStyle={content.imageStyle}
+                imagestyle={content.imagestyle}
                 imageSrc={content.imageSrc}
               >
                 {content.title}
