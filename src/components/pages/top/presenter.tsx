@@ -16,6 +16,7 @@ import Footer from './footer';
 import Header from './header';
 import Scene from './scene';
 import SidebarCount from './sidebarCount';
+import SidebarLimitedPlan from './sidebarLimitedPlan';
 import SidebarNotice from './sidebarNotice';
 import SidebarUserInfo from './sidebarUserInfo';
 import SpecialFeature from './specialFeature';
@@ -53,6 +54,7 @@ const Presenter = () => {
             <SidebarCount />
             <SidebarUserInfo />
             <SidebarNotice />
+            <SidebarLimitedPlan />
           </StyledSidebarColumn>
         </StyledMainContents>
       </StyledMainContainer>
