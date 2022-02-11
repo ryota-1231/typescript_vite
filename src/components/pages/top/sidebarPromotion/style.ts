@@ -1,16 +1,6 @@
 import styled from 'styled-components/macro';
 
 import Color from '../../../../styles/const/Color';
-import H2Component from '../../../uiParts/h2Component';
-
-export const StyledH2Component = styled(H2Component)`
-  padding: 2px 3px 5px;
-  margin-bottom: 20px;
-  font-size: 17px;
-  font-weight: 600;
-  color: #13131e;
-  letter-spacing: 0.3px;
-`;
 
 export const StyledPromotionList = styled.li`
   display: table;

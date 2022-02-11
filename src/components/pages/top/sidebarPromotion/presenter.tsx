@@ -1,7 +1,7 @@
 import { PROMOTION_STORE } from '../../../../utils/sidebarContents';
+import H2Component from '../../../uiParts/h2Component';
 
 import {
-  StyledH2Component,
   StyledPromotionInfo,
   StyledPromotionLink,
   StyledPromotionImageWrapper,
@@ -13,7 +13,7 @@ import {
 
 const Presenter = () => (
   <section css="margin-top: 50px;">
-    <StyledH2Component>[PR] 今月のお店</StyledH2Component>
+    <H2Component css="margin-bottom: 20px;">[PR] 今月のお店</H2Component>
     <ul>
       {PROMOTION_STORE.map((store) => (
         <StyledPromotionList key={store.id}>
