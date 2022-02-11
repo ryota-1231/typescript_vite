@@ -1,18 +1,27 @@
-type PromotionStoreType = {
+type CommonType = {
   id: number;
-  name: string;
-  areaGenre: string;
-  comment: string;
   imageSrc: string;
   link: string;
 };
 
-type LimitedPlanType = {
-  id: number;
+type LimitedPlanType = CommonType & {
   title: string;
   lead: string;
-  imageSrc: string;
-  link: string;
+};
+
+type PromotionStoreType = CommonType & {
+  name: string;
+  areaGenre: string;
+  comment: string;
+};
+
+type ReccomendedContentsType = CommonType & {
+  title: string;
+  text: string;
+  imageStyle: {
+    height: string;
+    backgroundStyle: string;
+  };
 };
 
 export const LIMITED_PLAN: LimitedPlanType[] = [
@@ -94,5 +103,41 @@ export const PROMOTION_STORE: PromotionStoreType[] = [
     imageSrc:
       'https://tblg.k-img.com/restaurant/images/Rvw/124752/50x50_square_124752544.jpg',
     link: '/',
+  },
+];
+
+export const RECOMMENDED_CONTENTS: ReccomendedContentsType[] = [
+  {
+    id: 1,
+    imageSrc: 'src/assets/images/top/top_award_logo.svg',
+    link: '/',
+    title: 'THE TABELOG AWARD 2022',
+    text: '今、一番美味しいお店を決定する表彰イベント「The Tabelog Award 2022」ついに発表！',
+    imageStyle: {
+      height: '50',
+      backgroundStyle: 'no-repeat center center',
+    },
+  },
+  {
+    id: 2,
+    imageSrc: 'src/assets/images/top/top_hyakumeiten_logo.svg',
+    link: '/',
+    title: '食べログ百名店',
+    text: 'うまいもの、いま食べるなら、このお店。カテゴリ別のランキングTOP100店舗を発表。',
+    imageStyle: {
+      height: '63',
+      backgroundStyle: 'no-repeat 0 0/contain',
+    },
+  },
+  {
+    id: 3,
+    imageSrc: 'src/assets/images/top/top_tabelog_magazine_logo_02.svg',
+    link: '/',
+    title: '食べログマガジン',
+    text: 'いますぐ行ってみたいお店、食べたいひと皿を、編集部渾身の記事でご紹介！',
+    imageStyle: {
+      height: '37',
+      backgroundStyle: 'no-repeat 0 0/contain',
+    },
   },
 ];
