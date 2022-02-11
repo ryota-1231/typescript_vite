@@ -18,7 +18,7 @@ type PromotionStoreType = CommonType & {
 type ReccomendedContentsType = CommonType & {
   title: string;
   text: string;
-  imagestyle: {
+  imageStyle: {
     height: string;
     backgroundStyle: string;
   };
@@ -113,7 +113,7 @@ export const RECOMMENDED_CONTENTS: ReccomendedContentsType[] = [
     link: '/',
     title: 'THE TABELOG AWARD 2022',
     text: '今、一番美味しいお店を決定する表彰イベント「The Tabelog Award 2022」ついに発表！',
-    imagestyle: {
+    imageStyle: {
       height: '50',
       backgroundStyle: 'no-repeat center center',
     },
@@ -124,7 +124,7 @@ export const RECOMMENDED_CONTENTS: ReccomendedContentsType[] = [
     link: '/',
     title: '食べログ百名店',
     text: 'うまいもの、いま食べるなら、このお店。カテゴリ別のランキングTOP100店舗を発表。',
-    imagestyle: {
+    imageStyle: {
       height: '63',
       backgroundStyle: 'no-repeat 0 0/contain',
     },
@@ -135,7 +135,7 @@ export const RECOMMENDED_CONTENTS: ReccomendedContentsType[] = [
     link: '/',
     title: '食べログマガジン',
     text: 'いますぐ行ってみたいお店、食べたいひと皿を、編集部渾身の記事でご紹介！',
-    imagestyle: {
+    imageStyle: {
       height: '37',
       backgroundStyle: 'no-repeat 0 0/contain',
     },
