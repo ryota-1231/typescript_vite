@@ -1,3 +1,12 @@
+type PromotionStoreType = {
+  id: number;
+  name: string;
+  areaGenre: string;
+  comment: string;
+  imageSrc: string;
+  link: string;
+};
+
 type LimitedPlanType = {
   id: number;
   title: string;
@@ -6,7 +15,7 @@ type LimitedPlanType = {
   link: string;
 };
 
-const LIMITED_PLAN: LimitedPlanType[] = [
+export const LIMITED_PLAN: LimitedPlanType[] = [
   {
     id: 1,
     title: '色んなお店で使えるカード',
@@ -65,4 +74,25 @@ const LIMITED_PLAN: LimitedPlanType[] = [
   },
 ];
 
-export default LIMITED_PLAN;
+export const PROMOTION_STORE: PromotionStoreType[] = [
+  {
+    id: 1,
+    name: '横浜中華街広東料理飲茶食べ放題専門店 龍興飯店',
+    areaGenre: '元町・中華街、日本大通り、石川町 / 中華料理',
+    comment:
+      '「路地裏にこそ旨い店あり」★香港通り★【時間無制限】厳選料理130品食べ放題1,980円■',
+    imageSrc:
+      'https://tblg.k-img.com/restaurant/images/Rvw/92213/50x50_square_92213980.jpg',
+    link: '/',
+  },
+  {
+    id: 2,
+    name: 'コマツ 今泉店',
+    areaGenre: '西鉄福岡（天神）、天神南、薬院 / ダイニングバー',
+    comment:
+      '【西鉄福岡徒歩4分/ドンキホーテさんの裏の二階に佇む本格イタリアンのお店】',
+    imageSrc:
+      'https://tblg.k-img.com/restaurant/images/Rvw/124752/50x50_square_124752544.jpg',
+    link: '/',
+  },
+];
