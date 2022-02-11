@@ -19,13 +19,13 @@ export const StyledRecommendedLink = styled.a`
 
 export const StyledRecommendedImage = styled.div<{
   imageSrc: string;
-  imagestyle: { height: string; backgroundStyle: string };
+  imageStyle: { height: string; backgroundStyle: string };
 }>`
   min-width: 8vw;
-  height: ${(props) => props.imagestyle.height}px;
+  height: ${(props) => props.imageStyle.height}px;
   text-indent: -9999px;
   background: ${(props) =>
-    `url(${props.imageSrc}) ${props.imagestyle.backgroundStyle}`};
+    `url(${props.imageSrc}) ${props.imageStyle.backgroundStyle}`};
 `;
 
 export const StyledRecommendedText = styled.p`
