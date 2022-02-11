@@ -1,4 +1,4 @@
-import LIMITED_PLAN from '../../../../utils/limitedPlan';
+import { LIMITED_PLAN } from '../../../../utils/sidebarContents';
 
 import {
   StyledH2Component,
