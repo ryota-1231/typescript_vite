@@ -64,7 +64,7 @@ const Presenter = () => (
                 <img
                   css="vertical-align: bottom;"
                   alt=""
-                  src="src/assets/images/top/top_banner_tpoint.png"
+                  src="images/top/top_banner_tpoint.png"
                   height="45"
                   width="45"
                 />

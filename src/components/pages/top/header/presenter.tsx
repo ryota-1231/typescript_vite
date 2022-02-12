@@ -71,7 +71,7 @@ const Presenter = () => (
             <a href="https://itunes.apple.com/jp/app/id763377066?mt=8">
               <img
                 alt="Download on the App Store"
-                src="src/assets/images/download_appstore.png"
+                src="images/download_appstore.png"
               />
             </a>
           </li>
@@ -79,7 +79,7 @@ const Presenter = () => (
             <a href="https://play.google.com/store/apps/details?id=com.kakaku.tabelog">
               <img
                 alt="GET IT ON Google Play"
-                src="src/assets/images/download_googleplay.png"
+                src="images/download_googleplay.png"
               />
             </a>
           </li>

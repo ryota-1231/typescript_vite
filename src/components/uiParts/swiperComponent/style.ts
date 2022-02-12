@@ -32,7 +32,7 @@ const changeStyle = (props: string) => {
       background-color: #9d834e;
       &::before {
         width: 34px;
-        background: url('src/assets/images/top/top_award_gold.svg') center center
+        background: url('images/top/top_award_gold.svg') center center
           no-repeat;
       }
     `;
@@ -42,7 +42,7 @@ const changeStyle = (props: string) => {
       background-color: #8c8c8c;
       &::before {
         width: 41px;
-        background: url('src/assets/images/top/top_award_silver.svg') center center
+        background: url('images/top/top_award_silver.svg') center center
           no-repeat;
       }
     `;
@@ -52,7 +52,7 @@ const changeStyle = (props: string) => {
       background-color: #866a56;
       &::before {
         width: 47px;
-        background: url('src/assets/images/top/top_award_bronze.svg') center center
+        background: url('images/top/top_award_bronze.svg') center center
           no-repeat;
       }
     `;

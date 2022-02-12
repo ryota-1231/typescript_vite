@@ -47,7 +47,7 @@ const Presenter = ({ array, handleClickReadMore }: PropsType) => (
           <StyledBannerIcon>
             <img
               alt="icon"
-              src="src/assets/images/top/top_banner_icons.png"
+              src="images/top/top_banner_icons.png"
               width="106"
               height="42"
             />
@@ -82,7 +82,7 @@ const Presenter = ({ array, handleClickReadMore }: PropsType) => (
                     <StyledTimelineBoxImageWrapper>
                       <StyledTimelineBoxImage
                         alt="食べログマガジン"
-                        src="src/assets/images/top/top_tabelog_magazine_logo.svg"
+                        src="images/top/top_tabelog_magazine_logo.svg"
                         width="50"
                         height="50"
                       />

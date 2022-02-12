@@ -47,7 +47,7 @@ const Presenter = ({
           <StyledAreaTargetImage>
             <img
               alt="東京"
-              src="src/assets/images/top/top_area_search_tokyo.png"
+              src="images/top/top_area_search_tokyo.png"
             />
           </StyledAreaTargetImage>
           <StyledAreaTargetText>
@@ -68,7 +68,7 @@ const Presenter = ({
           <StyledAreaTargetImage>
             <img
               alt="神奈川"
-              src="src/assets/images/top/top_area_search_kanagawa.png"
+              src="images/top/top_area_search_kanagawa.png"
             />
           </StyledAreaTargetImage>
           <StyledAreaTargetText>
@@ -89,7 +89,7 @@ const Presenter = ({
           <StyledAreaTargetImage>
             <img
               alt="愛知"
-              src="src/assets/images/top/top_area_search_aichi.png"
+              src="images/top/top_area_search_aichi.png"
             />
           </StyledAreaTargetImage>
           <StyledAreaTargetText>
@@ -111,7 +111,7 @@ const Presenter = ({
           <StyledAreaTargetImage>
             <img
               alt="大阪"
-              src="src/assets/images/top/top_area_search_osaka.png"
+              src="images/top/top_area_search_osaka.png"
             />
           </StyledAreaTargetImage>
           <StyledAreaTargetText>
@@ -132,7 +132,7 @@ const Presenter = ({
           <StyledAreaTargetImage>
             <img
               alt="京都"
-              src="src/assets/images/top/top_area_search_kyoto.png"
+              src="images/top/top_area_search_kyoto.png"
             />
           </StyledAreaTargetImage>
           <StyledAreaTargetText>
@@ -153,7 +153,7 @@ const Presenter = ({
           <StyledAreaTargetImage>
             <img
               alt="福岡"
-              src="src/assets/images/top/top_area_search_fukuoka.png"
+              src="images/top/top_area_search_fukuoka.png"
             />
           </StyledAreaTargetImage>
           <StyledAreaTargetText>

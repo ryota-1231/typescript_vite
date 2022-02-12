@@ -47,7 +47,7 @@ const Presenter = () => (
                 width="55"
                 height="55"
                 alt="4074fc"
-                src="src/assets/images/top/top_sidebar_nophoto.png"
+                src="images/top/top_sidebar_nophoto.png"
               />
             </StyledUserInfoLink>
           </StyledUserInfoImageWrapper>
