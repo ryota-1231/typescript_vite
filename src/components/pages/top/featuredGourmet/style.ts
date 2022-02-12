@@ -31,7 +31,7 @@ export const StyledSlideHeadingLogoLink = styled.a`
   word-wrap: normal;
   overflow-wrap: normal;
   white-space: nowrap;
-  background: url('src/assets/images/top/top_hot_news_logo.svg') no-repeat 0 0 /
+  background: url('images/top/top_hot_news_logo.svg') no-repeat 0 0 /
     contain;
 `;
 
@@ -40,7 +40,7 @@ export const StyledSlideHeadingMatomeLogoLink = styled(
 )`
   width: 150px;
   height: 21px;
-  background: url('src/assets/images/top/top_logo_tabelog_matome.png') no-repeat
+  background: url('images/top/top_logo_tabelog_matome.png') no-repeat
     0 0 / contain;
 `;
 

@@ -3,7 +3,7 @@ import styled from 'styled-components/macro';
 export const StyledWrapper = styled.div`
   position: relative;
   height: 450px;
-  background-image: url('src/assets/images/top/top_header_01.png');
+  background-image: url('images/top/top_header_01.png');
   background-repeat: repeat-x;
   background-position: calc(50% + 8px) 0;
   background-size: auto 450px;
@@ -103,7 +103,7 @@ export const StyledTitleImage = styled.div`
   width: 100%;
   height: auto;
   min-height: 450px;
-  background-image: url('src/assets/images/top/top_header_02.png');
+  background-image: url('images/top/top_header_02.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: 1260px 450px;

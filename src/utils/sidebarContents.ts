@@ -109,7 +109,7 @@ export const PROMOTION_STORE: PromotionStoreType[] = [
 export const RECOMMENDED_CONTENTS: ReccomendedContentsType[] = [
   {
     id: 1,
-    imageSrc: 'src/assets/images/top/top_award_logo.svg',
+    imageSrc: 'images/top/top_award_logo.svg',
     link: '/',
     title: 'THE TABELOG AWARD 2022',
     text: '今、一番美味しいお店を決定する表彰イベント「The Tabelog Award 2022」ついに発表！',
@@ -120,7 +120,7 @@ export const RECOMMENDED_CONTENTS: ReccomendedContentsType[] = [
   },
   {
     id: 2,
-    imageSrc: 'src/assets/images/top/top_hyakumeiten_logo.svg',
+    imageSrc: 'images/top/top_hyakumeiten_logo.svg',
     link: '/',
     title: '食べログ百名店',
     text: 'うまいもの、いま食べるなら、このお店。カテゴリ別のランキングTOP100店舗を発表。',
@@ -131,7 +131,7 @@ export const RECOMMENDED_CONTENTS: ReccomendedContentsType[] = [
   },
   {
     id: 3,
-    imageSrc: 'src/assets/images/top/top_tabelog_magazine_logo_02.svg',
+    imageSrc: 'images/top/top_tabelog_magazine_logo_02.svg',
     link: '/',
     title: '食べログマガジン',
     text: 'いますぐ行ってみたいお店、食べたいひと皿を、編集部渾身の記事でご紹介！',

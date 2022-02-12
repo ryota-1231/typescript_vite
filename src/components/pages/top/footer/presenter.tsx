@@ -14,7 +14,7 @@ const Presenter = () => (
       <StyledTabelogNavigateList>
         <StyledNavigateLink href="/matome/">
           <img
-            src="src/assets/images/top/top_tabelog_matome.svg"
+            src="images/top/top_tabelog_matome.svg"
             width="150"
             height="21"
             alt="食べログまとめ"
@@ -25,7 +25,7 @@ const Presenter = () => (
       <StyledTabelogNavigateList>
         <StyledNavigateLink href="https://magazine.tabelog.com/">
           <img
-            src="src/assets/images/top/top_footer_tabelog_magazine.svg"
+            src="images/top/top_footer_tabelog_magazine.svg"
             width="77"
             height="24"
             alt="食べログ magazine"
@@ -36,7 +36,7 @@ const Presenter = () => (
       <StyledTabelogNavigateList>
         <StyledNavigateLink href="https://tabelog.com/rvwrs/rvwr_ranking">
           <img
-            src="src/assets/images/top/top_footer_reviewer_ranking.svg"
+            src="images/top/top_footer_reviewer_ranking.svg"
             width="158"
             height="24"
             alt="食べログ レビュアーランキング"

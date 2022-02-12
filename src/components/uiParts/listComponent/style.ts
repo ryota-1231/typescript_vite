@@ -18,9 +18,7 @@ export const List = styled.li`
 export const Link = styled.a`
   padding: 7px 14px;
   color: #595960;
-  ${List}
-
-  &:hover {
+  ${List}:hover & {
     color: ${Color.HOVER};
   }
 `;

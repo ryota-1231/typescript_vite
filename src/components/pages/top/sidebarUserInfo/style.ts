@@ -136,7 +136,7 @@ export const StyledUserInfoDataSpan = styled.span`
     height: 13.7px;
     vertical-align: -8%;
     content: '';
-    background: url('src/assets/images/top/top_tpoint_logo.svg');
+    background: url('images/top/top_tpoint_logo.svg');
     background-size: cover;
   }
 `;
