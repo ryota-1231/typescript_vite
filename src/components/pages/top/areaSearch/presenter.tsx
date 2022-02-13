@@ -45,10 +45,7 @@ const Presenter = ({
       >
         <StyledAreaTarget>
           <StyledAreaTargetImage>
-            <img
-              alt="東京"
-              src="images/top/top_area_search_tokyo.png"
-            />
+            <img alt="東京" src="images/top/top_area_search_tokyo.png" />
           </StyledAreaTargetImage>
           <StyledAreaTargetText>
             東京
@@ -66,10 +63,7 @@ const Presenter = ({
       >
         <StyledAreaTarget>
           <StyledAreaTargetImage>
-            <img
-              alt="神奈川"
-              src="images/top/top_area_search_kanagawa.png"
-            />
+            <img alt="神奈川" src="images/top/top_area_search_kanagawa.png" />
           </StyledAreaTargetImage>
           <StyledAreaTargetText>
             神奈川
@@ -87,10 +81,7 @@ const Presenter = ({
       >
         <StyledAreaTarget>
           <StyledAreaTargetImage>
-            <img
-              alt="愛知"
-              src="images/top/top_area_search_aichi.png"
-            />
+            <img alt="愛知" src="images/top/top_area_search_aichi.png" />
           </StyledAreaTargetImage>
           <StyledAreaTargetText>
             愛知
@@ -109,10 +100,7 @@ const Presenter = ({
       >
         <StyledAreaTarget>
           <StyledAreaTargetImage>
-            <img
-              alt="大阪"
-              src="images/top/top_area_search_osaka.png"
-            />
+            <img alt="大阪" src="images/top/top_area_search_osaka.png" />
           </StyledAreaTargetImage>
           <StyledAreaTargetText>
             大阪
@@ -130,10 +118,7 @@ const Presenter = ({
       >
         <StyledAreaTarget>
           <StyledAreaTargetImage>
-            <img
-              alt="京都"
-              src="images/top/top_area_search_kyoto.png"
-            />
+            <img alt="京都" src="images/top/top_area_search_kyoto.png" />
           </StyledAreaTargetImage>
           <StyledAreaTargetText>
             京都
@@ -151,10 +136,7 @@ const Presenter = ({
       >
         <StyledAreaTarget>
           <StyledAreaTargetImage>
-            <img
-              alt="福岡"
-              src="images/top/top_area_search_fukuoka.png"
-            />
+            <img alt="福岡" src="images/top/top_area_search_fukuoka.png" />
           </StyledAreaTargetImage>
           <StyledAreaTargetText>
             福岡

@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "es5",
+    // "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
+    "allowJs": true,
     "skipLibCheck": false,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
@@ -14,11 +15,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["src/*"]
-    }
+    "jsx": "react-jsx"
   },
-  "include": ["./src", "./.eslintrc.js", "./vite.config.ts"]
+  "include": [
+    "./src",
+    "./.eslintrc.js",
+    "./vite.config.ts",
+    // ".storybook",
+    ".jest/jest-setup.ts"
+  ]
 }

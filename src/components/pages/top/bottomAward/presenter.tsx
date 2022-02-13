@@ -1,4 +1,3 @@
-import 'swiper/css';
 import { Tabs, TabPanel } from 'react-tabs';
 
 import 'react-tabs/style/react-tabs.css';
