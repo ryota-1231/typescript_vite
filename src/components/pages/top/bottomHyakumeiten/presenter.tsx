@@ -1,4 +1,3 @@
-import 'swiper/css';
 import { HYAKUMEITEN_CONDITIONS } from '../../../../utils/commitmentConditions';
 import SwiperComponent from '../../../uiParts/swiperComponent';
 

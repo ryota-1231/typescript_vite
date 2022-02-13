@@ -3,7 +3,6 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { HYAKUMEITEN_CONDITIONS } from '../../../utils/commitmentConditions';
 
 import SwiperComponent from './index';
-import 'swiper/css';
 
 export default {
   title: 'Component/SwiperComponent',

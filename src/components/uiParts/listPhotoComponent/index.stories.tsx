@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import src from '../../../assets/images/top/top_scene_joshikai.png';
+import src from '../../../../public/images/top/top_scene_joshikai.png';
 
 import ListPhotoComponent from './index';
 

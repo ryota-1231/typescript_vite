@@ -33,6 +33,8 @@ import {
 } from './style';
 import Timeline from './timeline';
 
+import 'swiper/css';
+
 const Presenter = () => {
   const prefectureContext = useContext(PrefectureContext);
   return (

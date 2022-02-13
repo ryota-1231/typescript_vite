@@ -1,7 +1,6 @@
 import { Autoplay, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/css';
 import H2Component from '../../../uiParts/h2Component';
 import SwiperButtonComponent from '../../../uiParts/swiperButtonComponent';
 
