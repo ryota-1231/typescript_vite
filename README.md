@@ -84,3 +84,5 @@ context を使用する際は該当の page/index.tsx ファイルの階層か�
 > type PropsType = React.ComponentProps<typeof Presenter>;
 
 ## push する時は eslint-fix/prettier-fix/stylelint-fix を実行してそれぞれでエラーがない状態ですること
+
+=> 後に自動化する。
