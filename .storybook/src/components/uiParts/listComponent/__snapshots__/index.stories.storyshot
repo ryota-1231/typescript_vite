@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Component/ListComponent List 1`] = `
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 12px 12px 0 0;
+  font-size: 12px;
+  line-height: 1;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+}
+
+.c1:hover {
+  border: 1px solid #ff9600;
+}
+
+.c3 {
+  padding: 7px 14px;
+  color: #595960;
+}
+
+.c0:hover .c2 {
+  color: #ff9600;
+}
+
+<li
+  className="c0 c1 className"
+>
+  <a
+    className="c2 c3"
+    href="/"
+  >
+    test
+  </a>
+</li>
+`;

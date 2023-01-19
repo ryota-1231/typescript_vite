@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Component/ListPhotoComponent List Photo 1`] = `
+.c0 {
+  position: relative;
+  width: 16%;
+  max-width: 150px;
+  height: auto;
+}
+
+.c0:hover {
+  opacity: 0.8;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.c2 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient( to top, rgb(0 0 0 / 40%), rgb(7 7 7 / 30%), rgb(82 82 82 / 0%) 97%, rgb(84 84 84 / 0%) );
+}
+
+.c2::before {
+  display: block;
+  padding-top: 100%;
+  content: '';
+}
+
+.c3 {
+  position: absolute;
+  bottom: 7%;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 4%;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+}
+
+.c4 {
+  font-size: 17;
+  font-weight: bold;
+  line-height: 1.5;
+  -webkit-letter-spacing: 0.06vw;
+  -moz-letter-spacing: 0.06vw;
+  -ms-letter-spacing: 0.06vw;
+  letter-spacing: 0.06vw;
+}
+
+.c5 {
+  font-size: 12.8px;
+  font-weight: bold;
+  -webkit-letter-spacing: 0.04vw;
+  -moz-letter-spacing: 0.04vw;
+  -ms-letter-spacing: 0.04vw;
+  letter-spacing: 0.04vw;
+}
+
+.c5 > span {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+<li
+  className="c0 className"
+>
+  <p
+    className="c1"
+  >
+    <img
+      alt="test"
+      css="width: 100%"
+      src=""
+    />
+  </p>
+  <a
+    className="c2"
+    href="/"
+  >
+    <div
+      className="c3"
+    >
+      <p
+        className="c4"
+      >
+        test
+      </p>
+      <p
+        className="c5"
+      >
+        123,456
+        <span>
+          件
+        </span>
+      </p>
+    </div>
+  </a>
+</li>
+`;

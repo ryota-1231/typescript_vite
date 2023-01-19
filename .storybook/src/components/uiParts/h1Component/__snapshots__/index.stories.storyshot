@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Component/H1Component H 1 1`] = `
+.c0 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #13131e;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+}
+
+<h1
+  className="c0"
+>
+  H1
+</h1>
+`;

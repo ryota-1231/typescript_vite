@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Component/SwiperButtonComponent Next Button 1`] = `
+.c0 {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  margin-top: -6px;
+  cursor: pointer;
+  background-color: #fff;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 27px 44px;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 25%);
+  opacity: 0.9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.c0::after {
+  position: absolute;
+  top: 50%;
+  right: auto;
+  left: 50%;
+  font-family: 'Tabelog Glyph',sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  color: #999;
+  text-transform: none;
+  content: '\\f641';
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-font-smoothing: antialiased;
+}
+
+.c1 {
+  right: -31px;
+  left: auto;
+}
+
+.c1.swiper-button-disabled {
+  display: none;
+}
+
+<div
+  className="c0 c1 className"
+/>
+`;
+
+exports[`Storyshots Component/SwiperButtonComponent Prev Button 1`] = `
+.c0 {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  margin-top: -6px;
+  cursor: pointer;
+  background-color: #fff;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 27px 44px;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 25%);
+  opacity: 0.9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.c0::after {
+  position: absolute;
+  top: 50%;
+  right: auto;
+  left: 50%;
+  font-family: 'Tabelog Glyph',sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  color: #999;
+  text-transform: none;
+  content: '\\f641';
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-font-smoothing: antialiased;
+}
+
+.c1 {
+  right: auto;
+  left: -31px;
+}
+
+.c1.swiper-button-disabled {
+  display: none;
+}
+
+<div
+  className="c0 c1 className"
+/>
+`;
